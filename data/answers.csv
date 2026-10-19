@@ -1,0 +1,361 @@
+round,week,annotator,position,showing,clip,star,tank,camera,poker,annotator_poked,live_state,state,eating,revised,answered_at,loop_watched,outcome,seconds_to_move_away
+2026-10-15,1,Dalton,1,1,W1-C13,W1 starbase A,starbase,A,Gray,false,quiescent,alert,,false,2026-10-19T18:51:00.832Z,true,Moved away,95.6
+2026-10-15,1,Dalton,2,1,W1-C37,W1 starbot B,starbot,B,Kendra,false,,quiescent,,false,2026-10-19T18:51:16.487Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,3,1,W1-C14,W1 starbase B,starbase,B,Gray,false,alert,alert,,false,2026-10-19T18:51:31.953Z,true,Moved away,98.7
+2026-10-15,1,Dalton,4,1,W1-C08,W1 starbase A,starbase,A,Kendra,false,alert,alert,,false,2026-10-19T18:51:47.101Z,true,Moved away,51.9
+2026-10-15,1,Dalton,5,1,W1-C09,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,,false,2026-10-19T18:52:02.490Z,true,Moved away,86.4
+2026-10-15,1,Dalton,6,1,W1-C01,W1 starbot A,starbot,A,Gray,false,quiescent,alert,,false,2026-10-19T18:52:39.154Z,true,No movement,
+2026-10-15,1,Dalton,7,1,W1-C02,W1 starbase C,starbase,C,Kendra,false,quiescent,alert,,false,2026-10-19T18:52:54.951Z,true,Moved away,40.6
+2026-10-15,1,Dalton,8,1,W1-C30,W1 starbot B,starbot,B,Gray,false,alert,alert,,false,2026-10-19T18:53:10.208Z,true,Moved away,108.5
+2026-10-15,1,Dalton,9,1,W1-C24,W1 starbase C,starbase,C,Kendra,false,alert,alert,,false,2026-10-19T18:53:25.543Z,true,Moved away,240.0
+2026-10-15,1,Dalton,10,1,W1-C21,W1 starbot A,starbot,A,Kendra,false,moving,moving,,false,2026-10-19T18:53:41.470Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,11,1,W1-C17,W1 starbot D,starbot,D,Gray,false,alert,moving,,false,2026-10-19T19:01:13.973Z,true,Moved away,187.3
+2026-10-15,1,Dalton,12,1,W1-C27,W1 starbase C,starbase,C,Gray,false,quiescent,alert,,false,2026-10-19T19:01:29.591Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,13,1,W1-C33,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,,false,2026-10-19T19:01:45.177Z,true,No movement,
+2026-10-15,1,Dalton,14,1,W1-C10,W1 starbase B,starbase,B,Gray,false,quiescent,alert,,false,2026-10-19T19:02:00.566Z,true,Moved away,19.1
+2026-10-15,1,Dalton,15,1,W1-C44,W1 starbase C,starbase,C,Gray,false,quiescent,alert,,false,2026-10-19T19:02:16.028Z,true,Moved away,157.2
+2026-10-15,1,Dalton,16,1,W1-C15,W1 starbase C,starbase,C,Gray,false,alert,alert,,false,2026-10-19T19:20:50.048Z,true,Moved away,102.5
+2026-10-15,1,Dalton,17,1,W1-C41,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,,false,2026-10-19T19:21:07.741Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,18,1,W1-C26,W1 starbase B,starbase,B,Gray,false,quiescent,alert,,false,2026-10-19T19:21:23.202Z,true,Moved away,135.6
+2026-10-15,1,Dalton,19,1,W1-C35,W1 starbot B,starbot,B,Kendra,false,alert,alert,not_eating,false,2026-10-19T19:56:12.234Z,true,Moved away,70.5
+2026-10-15,1,Dalton,20,2,W1-C37,W1 starbot B,starbot,B,Kendra,false,,quiescent,not_eating,false,2026-10-19T20:37:42.299Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,21,2,W1-C17,W1 starbot D,starbot,D,Gray,false,alert,moving,eating,false,2026-10-19T20:38:00.671Z,true,Moved away,187.3
+2026-10-15,1,Dalton,22,1,W1-C12,W1 starbot B,starbot,B,Kendra,false,moving,moving,eating,false,2026-10-19T20:39:12.768Z,true,Moved away,40.6
+2026-10-15,1,Dalton,23,1,W1-C04,W1 starbot C,starbot,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:39:32.285Z,true,Moved away,107.6
+2026-10-15,1,Dalton,24,1,W1-C19,W1 starbot D,starbot,D,Gray,false,quiescent,alert,eating,false,2026-10-19T20:41:30.352Z,true,No movement,
+2026-10-15,1,Dalton,25,1,W1-C36,W1 starbase A,starbase,A,Kendra,false,alert,moving,not_eating,false,2026-10-19T20:42:47.487Z,true,Moved away,46.2
+2026-10-15,1,Dalton,26,1,W1-C40,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,eating,false,2026-10-19T20:43:07.299Z,true,No movement,
+2026-10-15,1,Dalton,27,1,W1-C28,W1 starbot B,starbot,B,Gray,false,quiescent,alert,eating,false,2026-10-19T20:43:28.695Z,true,Moved away,179.0
+2026-10-15,1,Dalton,28,1,W1-C22,W1 starbot C,starbot,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:43:47.027Z,true,No movement,
+2026-10-15,1,Dalton,29,2,W1-C33,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,eating,false,2026-10-19T20:45:07.462Z,true,No movement,
+2026-10-15,1,Dalton,30,1,W1-C03,W1 starbase C,starbase,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:45:37.996Z,true,Moved away,76.5
+2026-10-15,1,Dalton,31,2,W1-C21,W1 starbot A,starbot,A,Kendra,false,moving,moving,eating,false,2026-10-19T20:46:03.748Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,32,2,W1-C04,W1 starbot C,starbot,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:47:50.747Z,true,Moved away,107.6
+2026-10-15,1,Dalton,33,1,W1-C07,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:48:42.136Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,34,1,W1-C43,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,eating,false,2026-10-19T20:49:11.319Z,true,Moved away,91.7
+2026-10-15,1,Dalton,35,2,W1-C22,W1 starbot C,starbot,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:50:28.288Z,true,No movement,
+2026-10-15,1,Dalton,36,1,W1-C31,W1 starbot D,starbot,D,Gray,false,alert,alert,eating,false,2026-10-19T20:50:59.075Z,true,No movement,
+2026-10-15,1,Dalton,37,2,W1-C02,W1 starbase C,starbase,C,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:51:21.865Z,true,Moved away,40.6
+2026-10-15,1,Dalton,38,1,W1-C29,W1 starbase A,starbase,A,Gray,false,quiescent,alert,eating,true,2026-10-19T20:51:59.160Z,true,Moved away,71.2
+2026-10-15,1,Dalton,39,2,W1-C08,W1 starbase A,starbase,A,Kendra,false,alert,alert,eating,false,2026-10-19T20:52:19.170Z,true,Moved away,51.9
+2026-10-15,1,Dalton,40,2,W1-C26,W1 starbase B,starbase,B,Gray,false,quiescent,alert,eating,false,2026-10-19T20:52:41.799Z,true,Moved away,135.6
+2026-10-15,1,Dalton,41,1,W1-C32,W1 starbase C,starbase,C,Kendra,false,alert,alert,eating,false,2026-10-19T20:53:58.716Z,true,Moved away,52.5
+2026-10-15,1,Dalton,42,1,W1-C45,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:57:13.872Z,true,Moved away,45.9
+2026-10-15,1,Dalton,43,1,W1-C39,W1 starbot C,starbot,C,Gray,false,quiescent,alert,not_eating,false,2026-10-19T21:06:43.520Z,true,Moved away,104.1
+2026-10-15,1,Dalton,44,1,W1-C18,W1 starbot D,starbot,D,Kendra,false,alert,alert,not_eating,false,2026-10-19T21:07:02.671Z,true,Moved away,97.3
+2026-10-15,1,Dalton,45,1,W1-C06,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:07:42.894Z,true,No movement,
+2026-10-15,1,Dalton,46,2,W1-C29,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T21:09:15.391Z,true,Moved away,71.2
+2026-10-15,1,Dalton,47,1,W1-C25,W1 starbot B,starbot,B,Kendra,false,alert,alert,eating,false,2026-10-19T21:09:33.294Z,true,Moved away,100.7
+2026-10-15,1,Dalton,48,1,W1-C11,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T21:09:56.865Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,49,1,W1-C20,W1 starbase B,starbase,B,Kendra,false,alert,alert,eating,false,2026-10-19T21:10:36.802Z,true,Moved away,74.2
+2026-10-15,1,Dalton,50,1,W1-C05,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T21:11:04.909Z,true,No movement,
+2026-10-15,1,Dalton,51,2,W1-C35,W1 starbot B,starbot,B,Kendra,false,alert,alert,not_eating,false,2026-10-19T21:11:36.847Z,true,Moved away,70.5
+2026-10-15,1,Dalton,52,1,W1-C16,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T21:12:15.653Z,true,Moved away,66.5
+2026-10-15,1,Dalton,53,2,W1-C14,W1 starbase B,starbase,B,Gray,false,alert,alert,eating,false,2026-10-19T21:17:48.259Z,true,Moved away,98.7
+2026-10-15,1,Dalton,54,1,W1-C23,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:18:21.228Z,true,No movement,
+2026-10-15,1,Dalton,55,2,W1-C44,W1 starbase C,starbase,C,Gray,false,quiescent,alert,eating,false,2026-10-19T21:18:59.169Z,true,Moved away,157.2
+2026-10-15,1,Dalton,56,1,W1-C34,W1 starbot B,starbot,B,Gray,false,moving,moving,not_eating,false,2026-10-19T21:19:21.673Z,true,Moved away,29.6
+2026-10-15,1,Dalton,57,2,W1-C07,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T21:19:50.026Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,58,1,W1-C42,W1 starbase B,starbase,B,Gray,false,alert,alert,eating,false,2026-10-19T21:20:16.597Z,true,Moved away,29.8
+2026-10-15,1,Dalton,59,2,W1-C12,W1 starbot B,starbot,B,Kendra,false,moving,moving,eating,false,2026-10-19T21:22:02.830Z,true,Moved away,40.6
+2026-10-15,1,Dalton,60,2,W1-C06,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:32:48.438Z,true,No movement,
+2026-10-15,1,Dalton,61,2,W1-C41,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T21:33:10.774Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,62,2,W1-C30,W1 starbot B,starbot,B,Gray,false,alert,alert,eating,false,2026-10-19T21:34:00.031Z,true,Moved away,108.5
+2026-10-15,1,Dalton,63,2,W1-C45,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T21:34:59.451Z,true,Moved away,45.9
+2026-10-15,1,Dalton,64,1,W1-C38,W1 starbase A,starbase,A,Gray,false,quiescent,alert,eating,true,2026-10-19T21:35:28.494Z,true,Moved away,47.2
+2026-10-15,1,Dalton,65,2,W1-C15,W1 starbase C,starbase,C,Gray,false,alert,alert,eating,false,2026-10-19T21:36:01.598Z,true,Moved away,102.5
+2026-10-15,1,Dalton,66,2,W1-C34,W1 starbot B,starbot,B,Gray,false,moving,moving,eating,false,2026-10-19T21:36:29.954Z,true,Moved away,29.6
+2026-10-15,1,Dalton,67,2,W1-C18,W1 starbot D,starbot,D,Kendra,false,alert,alert,not_eating,false,2026-10-19T21:36:51.590Z,true,Moved away,97.3
+2026-10-15,1,Dalton,68,2,W1-C24,W1 starbase C,starbase,C,Kendra,false,alert,alert,eating,false,2026-10-19T21:37:39.732Z,true,Moved away,240.0
+2026-10-15,1,Dalton,69,2,W1-C28,W1 starbot B,starbot,B,Gray,false,quiescent,alert,eating,false,2026-10-19T21:38:00.668Z,true,Moved away,179.0
+2026-10-15,1,Dalton,70,2,W1-C11,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T21:38:22.338Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,71,2,W1-C31,W1 starbot D,starbot,D,Gray,false,alert,alert,eating,false,2026-10-19T21:39:01.127Z,true,No movement,
+2026-10-15,1,Dalton,72,2,W1-C40,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:39:50.967Z,true,No movement,
+2026-10-15,1,Dalton,73,2,W1-C43,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:40:23.306Z,true,Moved away,91.7
+2026-10-15,1,Dalton,74,2,W1-C27,W1 starbase C,starbase,C,Gray,false,quiescent,alert,eating,false,2026-10-19T21:40:46.225Z,true,"Moved, didn't leave",
+2026-10-15,1,Dalton,75,2,W1-C38,W1 starbase A,starbase,A,Gray,false,quiescent,alert,eating,false,2026-10-19T21:41:06.344Z,true,Moved away,47.2
+2026-10-15,1,Dalton,76,2,W1-C13,W1 starbase A,starbase,A,Gray,false,quiescent,alert,eating,false,2026-10-19T21:41:30.398Z,true,Moved away,95.6
+2026-10-15,1,Dalton,77,2,W1-C39,W1 starbot C,starbot,C,Gray,false,quiescent,alert,not_eating,false,2026-10-19T21:42:19.178Z,true,Moved away,104.1
+2026-10-15,1,Dalton,78,2,W1-C36,W1 starbase A,starbase,A,Kendra,false,alert,moving,not_eating,false,2026-10-19T21:42:37.617Z,true,Moved away,46.2
+2026-10-15,1,Dalton,79,2,W1-C23,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:44:09.776Z,true,No movement,
+2026-10-15,1,Dalton,80,2,W1-C16,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T21:44:32.613Z,true,Moved away,66.5
+2026-10-15,1,Dalton,81,2,W1-C32,W1 starbase C,starbase,C,Kendra,false,alert,quiescent,not_eating,false,2026-10-19T21:45:30.754Z,true,Moved away,52.5
+2026-10-15,1,Dalton,82,2,W1-C19,W1 starbot D,starbot,D,Gray,false,quiescent,alert,eating,false,2026-10-19T21:46:02.143Z,true,No movement,
+2026-10-15,1,Dalton,83,2,W1-C20,W1 starbase B,starbase,B,Kendra,false,alert,alert,eating,false,2026-10-19T21:46:20.328Z,true,Moved away,74.2
+2026-10-15,1,Dalton,84,2,W1-C09,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:46:47.593Z,true,Moved away,86.4
+2026-10-15,1,Dalton,85,2,W1-C01,W1 starbot A,starbot,A,Gray,false,quiescent,alert,eating,false,2026-10-19T21:47:05.230Z,true,No movement,
+2026-10-15,1,Dalton,86,2,W1-C10,W1 starbase B,starbase,B,Gray,false,quiescent,alert,not_eating,false,2026-10-19T21:47:46.939Z,true,Moved away,19.1
+2026-10-15,1,Dalton,87,2,W1-C42,W1 starbase B,starbase,B,Gray,false,alert,alert,eating,false,2026-10-19T21:48:13.961Z,true,Moved away,29.8
+2026-10-15,1,Dalton,88,2,W1-C25,W1 starbot B,starbot,B,Kendra,false,alert,alert,eating,false,2026-10-19T21:48:31.563Z,true,Moved away,100.7
+2026-10-15,1,Dalton,89,2,W1-C03,W1 starbase C,starbase,C,Gray,false,quiescent,alert,eating,false,2026-10-19T21:48:52.833Z,true,Moved away,76.5
+2026-10-15,1,Dalton,90,2,W1-C05,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,eating,false,2026-10-19T21:49:33.808Z,true,No movement,
+2026-10-15,1,Gray,1,1,W1-C36,W1 starbase A,starbase,A,Kendra,false,alert,moving,not_eating,false,2026-10-19T20:14:53.265Z,true,Moved away,46.2
+2026-10-15,1,Gray,2,1,W1-C15,W1 starbase C,starbase,C,Gray,true,alert,alert,eating,false,2026-10-19T20:15:57.290Z,true,Moved away,102.5
+2026-10-15,1,Gray,3,1,W1-C03,W1 starbase C,starbase,C,Gray,true,quiescent,alert,eating,false,2026-10-19T20:16:16.122Z,true,Moved away,76.5
+2026-10-15,1,Gray,4,1,W1-C25,W1 starbot B,starbot,B,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:16:42.579Z,true,Moved away,100.7
+2026-10-15,1,Gray,5,1,W1-C24,W1 starbase C,starbase,C,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:17:00.346Z,true,Moved away,240.0
+2026-10-15,1,Gray,6,1,W1-C12,W1 starbot B,starbot,B,Kendra,false,moving,moving,not_eating,false,2026-10-19T20:17:20.831Z,true,Moved away,40.6
+2026-10-15,1,Gray,7,1,W1-C28,W1 starbot B,starbot,B,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:17:40.726Z,true,Moved away,179.0
+2026-10-15,1,Gray,8,1,W1-C34,W1 starbot B,starbot,B,Gray,true,moving,moving,not_eating,false,2026-10-19T20:17:58.475Z,true,Moved away,29.6
+2026-10-15,1,Gray,9,1,W1-C30,W1 starbot B,starbot,B,Gray,true,alert,alert,cant_tell,false,2026-10-19T20:18:17.802Z,true,Moved away,108.5
+2026-10-15,1,Gray,10,1,W1-C20,W1 starbase B,starbase,B,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:18:40.819Z,true,Moved away,74.2
+2026-10-15,1,Gray,11,1,W1-C02,W1 starbase C,starbase,C,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:19:01.360Z,true,Moved away,40.6
+2026-10-15,1,Gray,12,1,W1-C29,W1 starbase A,starbase,A,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:19:33.641Z,true,Moved away,71.2
+2026-10-15,1,Gray,13,1,W1-C01,W1 starbot A,starbot,A,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:19:52.518Z,true,No movement,
+2026-10-15,1,Gray,14,1,W1-C19,W1 starbot D,starbot,D,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:20:09.519Z,true,No movement,
+2026-10-15,1,Gray,15,1,W1-C08,W1 starbase A,starbase,A,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:20:32.388Z,true,Moved away,51.9
+2026-10-15,1,Gray,16,1,W1-C38,W1 starbase A,starbase,A,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:20:52.392Z,true,Moved away,47.2
+2026-10-15,1,Gray,17,2,W1-C24,W1 starbase C,starbase,C,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:21:11.855Z,true,Moved away,240.0
+2026-10-15,1,Gray,18,1,W1-C35,W1 starbot B,starbot,B,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:21:34.260Z,true,Moved away,70.5
+2026-10-15,1,Gray,19,1,W1-C17,W1 starbot D,starbot,D,Gray,true,alert,moving,cant_tell,false,2026-10-19T20:21:54.728Z,true,Moved away,187.3
+2026-10-15,1,Gray,20,1,W1-C31,W1 starbot D,starbot,D,Gray,true,alert,alert,cant_tell,false,2026-10-19T20:22:12.140Z,true,No movement,
+2026-10-15,1,Gray,21,2,W1-C25,W1 starbot B,starbot,B,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:22:28.556Z,true,Moved away,100.7
+2026-10-15,1,Gray,22,1,W1-C32,W1 starbase C,starbase,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:22:46.173Z,true,Moved away,52.5
+2026-10-15,1,Gray,23,1,W1-C44,W1 starbase C,starbase,C,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:23:05.552Z,true,Moved away,157.2
+2026-10-15,1,Gray,24,1,W1-C21,W1 starbot A,starbot,A,Kendra,false,moving,moving,not_eating,false,2026-10-19T20:23:27.042Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,25,1,W1-C22,W1 starbot C,starbot,C,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:23:59.708Z,true,No movement,
+2026-10-15,1,Gray,26,2,W1-C38,W1 starbase A,starbase,A,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:24:20.862Z,true,Moved away,47.2
+2026-10-15,1,Gray,27,1,W1-C33,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:24:44.314Z,true,No movement,
+2026-10-15,1,Gray,28,2,W1-C15,W1 starbase C,starbase,C,Gray,true,alert,quiescent,cant_tell,false,2026-10-19T20:25:03.363Z,true,Moved away,102.5
+2026-10-15,1,Gray,29,2,W1-C29,W1 starbase A,starbase,A,Gray,true,quiescent,alert,not_eating,true,2026-10-19T20:25:25.176Z,true,Moved away,71.2
+2026-10-15,1,Gray,30,1,W1-C04,W1 starbot C,starbot,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:25:44.077Z,true,Moved away,107.6
+2026-10-15,1,Gray,31,2,W1-C32,W1 starbase C,starbase,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:26:00.611Z,true,Moved away,52.5
+2026-10-15,1,Gray,32,1,W1-C10,W1 starbase B,starbase,B,Gray,true,quiescent,quiescent,not_eating,false,2026-10-19T20:26:18.861Z,true,Moved away,19.1
+2026-10-15,1,Gray,33,1,W1-C43,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:26:34.798Z,true,Moved away,91.7
+2026-10-15,1,Gray,34,1,W1-C13,W1 starbase A,starbase,A,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:26:51.848Z,true,Moved away,95.6
+2026-10-15,1,Gray,35,1,W1-C09,W1 starbase B,starbase,B,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:27:10.211Z,true,Moved away,86.4
+2026-10-15,1,Gray,36,1,W1-C16,W1 starbot A,starbot,A,Gray,true,alert,alert,not_eating,false,2026-10-19T20:27:28.579Z,true,Moved away,66.5
+2026-10-15,1,Gray,37,2,W1-C19,W1 starbot D,starbot,D,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:27:59.378Z,true,No movement,
+2026-10-15,1,Gray,38,1,W1-C27,W1 starbase C,starbase,C,Gray,true,quiescent,quiescent,not_eating,false,2026-10-19T20:28:16.413Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,39,1,W1-C07,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:28:32.697Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,40,1,W1-C42,W1 starbase B,starbase,B,Gray,true,alert,alert,not_eating,false,2026-10-19T20:28:50.203Z,true,Moved away,29.8
+2026-10-15,1,Gray,41,1,W1-C45,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:29:08.434Z,true,Moved away,45.9
+2026-10-15,1,Gray,42,2,W1-C30,W1 starbot B,starbot,B,Gray,true,alert,alert,not_eating,false,2026-10-19T20:29:27.431Z,true,Moved away,108.5
+2026-10-15,1,Gray,43,1,W1-C26,W1 starbase B,starbase,B,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:29:44.917Z,true,Moved away,135.6
+2026-10-15,1,Gray,44,2,W1-C13,W1 starbase A,starbase,A,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:30:07.053Z,true,Moved away,95.6
+2026-10-15,1,Gray,45,1,W1-C37,W1 starbot B,starbot,B,Kendra,false,,quiescent,not_eating,false,2026-10-19T20:30:26.304Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,46,1,W1-C11,W1 starbot A,starbot,A,Gray,true,alert,alert,cant_tell,false,2026-10-19T20:30:42.546Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,47,1,W1-C23,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:31:00.529Z,true,No movement,
+2026-10-15,1,Gray,48,2,W1-C07,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:31:19.802Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,49,1,W1-C14,W1 starbase B,starbase,B,Gray,true,alert,quiescent,cant_tell,false,2026-10-19T20:31:47.493Z,true,Moved away,98.7
+2026-10-15,1,Gray,50,2,W1-C22,W1 starbot C,starbot,C,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:32:09.449Z,true,No movement,
+2026-10-15,1,Gray,51,2,W1-C20,W1 starbase B,starbase,B,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:32:25.898Z,true,Moved away,74.2
+2026-10-15,1,Gray,52,1,W1-C05,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:32:43.401Z,true,No movement,
+2026-10-15,1,Gray,53,2,W1-C31,W1 starbot D,starbot,D,Gray,true,alert,alert,cant_tell,false,2026-10-19T20:32:59.788Z,true,No movement,
+2026-10-15,1,Gray,54,1,W1-C41,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:33:16.100Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,55,1,W1-C18,W1 starbot D,starbot,D,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:33:33.202Z,true,Moved away,97.3
+2026-10-15,1,Gray,56,1,W1-C39,W1 starbot C,starbot,C,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:33:49.353Z,true,Moved away,104.1
+2026-10-15,1,Gray,57,1,W1-C06,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:34:05.592Z,true,No movement,
+2026-10-15,1,Gray,58,2,W1-C45,W1 starbot C,starbot,C,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:34:23.819Z,true,Moved away,45.9
+2026-10-15,1,Gray,59,2,W1-C04,W1 starbot C,starbot,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:34:39.717Z,true,Moved away,107.6
+2026-10-15,1,Gray,60,2,W1-C26,W1 starbase B,starbase,B,Gray,true,quiescent,quiescent,cant_tell,true,2026-10-19T20:35:00.904Z,true,Moved away,135.6
+2026-10-15,1,Gray,61,2,W1-C41,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:35:17.489Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,62,1,W1-C40,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:35:33.525Z,true,No movement,
+2026-10-15,1,Gray,63,2,W1-C17,W1 starbot D,starbot,D,Gray,true,alert,alert,cant_tell,false,2026-10-19T20:35:50.206Z,true,Moved away,187.3
+2026-10-15,1,Gray,64,2,W1-C02,W1 starbase C,starbase,C,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:36:08.474Z,true,Moved away,40.6
+2026-10-15,1,Gray,65,2,W1-C39,W1 starbot C,starbot,C,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:36:24.691Z,true,Moved away,104.1
+2026-10-15,1,Gray,66,2,W1-C37,W1 starbot B,starbot,B,Kendra,false,,quiescent,not_eating,false,2026-10-19T20:36:40.556Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,67,2,W1-C23,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:36:57.842Z,true,No movement,
+2026-10-15,1,Gray,68,2,W1-C18,W1 starbot D,starbot,D,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:37:15.817Z,true,Moved away,97.3
+2026-10-15,1,Gray,69,2,W1-C01,W1 starbot A,starbot,A,Gray,true,quiescent,alert,not_eating,false,2026-10-19T20:37:33.012Z,true,No movement,
+2026-10-15,1,Gray,70,2,W1-C42,W1 starbase B,starbase,B,Gray,true,alert,alert,not_eating,false,2026-10-19T20:37:50.757Z,true,Moved away,29.8
+2026-10-15,1,Gray,71,2,W1-C11,W1 starbot A,starbot,A,Gray,true,alert,alert,cant_tell,false,2026-10-19T20:38:06.723Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,72,2,W1-C09,W1 starbase B,starbase,B,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:38:22.557Z,true,Moved away,86.4
+2026-10-15,1,Gray,73,2,W1-C06,W1 starbot C,starbot,C,Kendra,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:38:39.791Z,true,No movement,
+2026-10-15,1,Gray,74,2,W1-C03,W1 starbase C,starbase,C,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:38:56.082Z,true,Moved away,76.5
+2026-10-15,1,Gray,75,2,W1-C35,W1 starbot B,starbot,B,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:39:12.041Z,true,Moved away,70.5
+2026-10-15,1,Gray,76,2,W1-C43,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:39:27.911Z,true,Moved away,91.7
+2026-10-15,1,Gray,77,2,W1-C21,W1 starbot A,starbot,A,Kendra,false,moving,moving,not_eating,false,2026-10-19T20:39:44.709Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,78,2,W1-C40,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:40:00.688Z,true,No movement,
+2026-10-15,1,Gray,79,2,W1-C36,W1 starbase A,starbase,A,Kendra,false,alert,moving,not_eating,false,2026-10-19T20:40:26.779Z,true,Moved away,46.2
+2026-10-15,1,Gray,80,2,W1-C28,W1 starbot B,starbot,B,Gray,true,quiescent,alert,cant_tell,false,2026-10-19T20:40:43.424Z,true,Moved away,179.0
+2026-10-15,1,Gray,81,2,W1-C12,W1 starbot B,starbot,B,Kendra,false,moving,moving,not_eating,false,2026-10-19T20:41:00.199Z,true,Moved away,40.6
+2026-10-15,1,Gray,82,2,W1-C16,W1 starbot A,starbot,A,Gray,true,alert,alert,not_eating,false,2026-10-19T20:41:16.255Z,true,Moved away,66.5
+2026-10-15,1,Gray,83,2,W1-C14,W1 starbase B,starbase,B,Gray,true,alert,quiescent,not_eating,false,2026-10-19T20:41:32.968Z,true,Moved away,98.7
+2026-10-15,1,Gray,84,2,W1-C08,W1 starbase A,starbase,A,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:41:50.971Z,true,Moved away,51.9
+2026-10-15,1,Gray,85,2,W1-C33,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:42:07.006Z,true,No movement,
+2026-10-15,1,Gray,86,2,W1-C27,W1 starbase C,starbase,C,Gray,true,quiescent,quiescent,not_eating,false,2026-10-19T20:42:23.267Z,true,"Moved, didn't leave",
+2026-10-15,1,Gray,87,2,W1-C44,W1 starbase C,starbase,C,Gray,true,quiescent,quiescent,not_eating,false,2026-10-19T20:42:39.366Z,true,Moved away,157.2
+2026-10-15,1,Gray,88,2,W1-C05,W1 starbot D,starbot,D,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:42:55.583Z,true,No movement,
+2026-10-15,1,Gray,89,2,W1-C34,W1 starbot B,starbot,B,Gray,true,moving,moving,not_eating,false,2026-10-19T20:43:11.568Z,true,Moved away,29.6
+2026-10-15,1,Gray,90,2,W1-C10,W1 starbase B,starbase,B,Gray,true,quiescent,quiescent,not_eating,false,2026-10-19T20:43:28.261Z,true,Moved away,19.1
+2026-10-15,1,Kendra,1,1,W1-C36,W1 starbase A,starbase,A,Kendra,true,alert,moving,not_eating,false,2026-10-19T20:15:18.328Z,true,Moved away,46.2
+2026-10-15,1,Kendra,2,1,W1-C13,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:15:47.795Z,true,Moved away,95.6
+2026-10-15,1,Kendra,3,1,W1-C39,W1 starbot C,starbot,C,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:16:10.093Z,true,Moved away,104.1
+2026-10-15,1,Kendra,4,1,W1-C08,W1 starbase A,starbase,A,Kendra,true,alert,alert,cant_tell,false,2026-10-19T20:16:34.789Z,true,Moved away,51.9
+2026-10-15,1,Kendra,5,1,W1-C12,W1 starbot B,starbot,B,Kendra,true,moving,moving,not_eating,false,2026-10-19T20:16:51.773Z,true,Moved away,40.6
+2026-10-15,1,Kendra,6,1,W1-C17,W1 starbot D,starbot,D,Gray,false,alert,moving,eating,false,2026-10-19T20:17:15.991Z,true,Moved away,187.3
+2026-10-15,1,Kendra,7,2,W1-C36,W1 starbase A,starbase,A,Kendra,true,alert,moving,not_eating,false,2026-10-19T20:17:32.709Z,true,Moved away,46.2
+2026-10-15,1,Kendra,8,1,W1-C26,W1 starbase B,starbase,B,Gray,false,quiescent,alert,cant_tell,false,2026-10-19T20:18:05.207Z,true,Moved away,135.6
+2026-10-15,1,Kendra,9,1,W1-C07,W1 starbot D,starbot,D,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:18:23.338Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,10,1,W1-C43,W1 starbase B,starbase,B,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:18:45.556Z,true,Moved away,91.7
+2026-10-15,1,Kendra,11,1,W1-C02,W1 starbase C,starbase,C,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:19:06.820Z,true,Moved away,40.6
+2026-10-15,1,Kendra,12,1,W1-C06,W1 starbot C,starbot,C,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:19:52.236Z,true,No movement,
+2026-10-15,1,Kendra,13,2,W1-C08,W1 starbase A,starbase,A,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:20:09.118Z,true,Moved away,51.9
+2026-10-15,1,Kendra,14,1,W1-C28,W1 starbot B,starbot,B,Gray,false,quiescent,alert,cant_tell,false,2026-10-19T20:20:27.135Z,true,Moved away,179.0
+2026-10-15,1,Kendra,15,1,W1-C40,W1 starbot A,starbot,A,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:20:44.783Z,true,No movement,
+2026-10-15,1,Kendra,16,1,W1-C35,W1 starbot B,starbot,B,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:21:01.616Z,true,Moved away,70.5
+2026-10-15,1,Kendra,17,1,W1-C24,W1 starbase C,starbase,C,Kendra,true,alert,alert,cant_tell,false,2026-10-19T20:21:18.201Z,true,Moved away,240.0
+2026-10-15,1,Kendra,18,1,W1-C01,W1 starbot A,starbot,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:21:37.999Z,true,No movement,
+2026-10-15,1,Kendra,19,1,W1-C20,W1 starbase B,starbase,B,Kendra,true,alert,moving,cant_tell,false,2026-10-19T20:22:01.051Z,true,Moved away,74.2
+2026-10-15,1,Kendra,20,2,W1-C39,W1 starbot C,starbot,C,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:22:18.533Z,true,Moved away,104.1
+2026-10-15,1,Kendra,21,1,W1-C32,W1 starbase C,starbase,C,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:22:37.032Z,true,Moved away,52.5
+2026-10-15,1,Kendra,22,1,W1-C27,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:22:54.450Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,23,1,W1-C22,W1 starbot C,starbot,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:23:11.998Z,true,No movement,
+2026-10-15,1,Kendra,24,1,W1-C18,W1 starbot D,starbot,D,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:23:37.464Z,true,Moved away,97.3
+2026-10-15,1,Kendra,25,1,W1-C37,W1 starbot B,starbot,B,Kendra,true,,quiescent,not_eating,false,2026-10-19T20:23:58.181Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,26,1,W1-C30,W1 starbot B,starbot,B,Gray,false,alert,alert,not_eating,false,2026-10-19T20:24:23.913Z,true,Moved away,108.5
+2026-10-15,1,Kendra,27,1,W1-C05,W1 starbot D,starbot,D,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:24:44.430Z,true,No movement,
+2026-10-15,1,Kendra,28,1,W1-C29,W1 starbase A,starbase,A,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:25:02.195Z,true,Moved away,71.2
+2026-10-15,1,Kendra,29,1,W1-C03,W1 starbase C,starbase,C,Gray,false,quiescent,alert,cant_tell,false,2026-10-19T20:25:19.962Z,true,Moved away,76.5
+2026-10-15,1,Kendra,30,1,W1-C38,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:25:38.229Z,true,Moved away,47.2
+2026-10-15,1,Kendra,31,1,W1-C19,W1 starbot D,starbot,D,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:25:55.109Z,true,No movement,
+2026-10-15,1,Kendra,32,1,W1-C10,W1 starbase B,starbase,B,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:26:11.828Z,true,Moved away,19.1
+2026-10-15,1,Kendra,33,1,W1-C16,W1 starbot A,starbot,A,Gray,false,alert,alert,not_eating,false,2026-10-19T20:26:31.176Z,true,Moved away,66.5
+2026-10-15,1,Kendra,34,1,W1-C41,W1 starbot A,starbot,A,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:26:48.875Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,35,1,W1-C04,W1 starbot C,starbot,C,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:27:05.474Z,true,Moved away,107.6
+2026-10-15,1,Kendra,36,1,W1-C45,W1 starbot C,starbot,C,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:27:22.424Z,true,Moved away,45.9
+2026-10-15,1,Kendra,37,1,W1-C09,W1 starbase B,starbase,B,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:27:40.155Z,true,Moved away,86.4
+2026-10-15,1,Kendra,38,2,W1-C43,W1 starbase B,starbase,B,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:27:58.540Z,true,Moved away,91.7
+2026-10-15,1,Kendra,39,1,W1-C42,W1 starbase B,starbase,B,Gray,false,alert,alert,not_eating,false,2026-10-19T20:28:17.189Z,true,Moved away,29.8
+2026-10-15,1,Kendra,40,1,W1-C21,W1 starbot A,starbot,A,Kendra,true,moving,moving,not_eating,false,2026-10-19T20:28:35.824Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,41,2,W1-C05,W1 starbot D,starbot,D,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:28:53.206Z,true,No movement,
+2026-10-15,1,Kendra,42,1,W1-C15,W1 starbase C,starbase,C,Gray,false,alert,alert,not_eating,false,2026-10-19T20:29:10.554Z,true,Moved away,102.5
+2026-10-15,1,Kendra,43,2,W1-C37,W1 starbot B,starbot,B,Kendra,true,,quiescent,not_eating,false,2026-10-19T20:29:29.488Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,44,2,W1-C26,W1 starbase B,starbase,B,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:29:48.305Z,true,Moved away,135.6
+2026-10-15,1,Kendra,45,1,W1-C23,W1 starbot A,starbot,A,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:30:06.370Z,true,No movement,
+2026-10-15,1,Kendra,46,1,W1-C31,W1 starbot D,starbot,D,Gray,false,alert,alert,not_eating,false,2026-10-19T20:30:28.852Z,true,No movement,
+2026-10-15,1,Kendra,47,1,W1-C33,W1 starbot D,starbot,D,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:30:53.586Z,true,No movement,
+2026-10-15,1,Kendra,48,1,W1-C34,W1 starbot B,starbot,B,Gray,false,moving,moving,not_eating,false,2026-10-19T20:31:15.484Z,true,Moved away,29.6
+2026-10-15,1,Kendra,49,1,W1-C25,W1 starbot B,starbot,B,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:31:32.202Z,true,Moved away,100.7
+2026-10-15,1,Kendra,50,1,W1-C44,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:31:49.584Z,true,Moved away,157.2
+2026-10-15,1,Kendra,51,2,W1-C02,W1 starbase C,starbase,C,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:32:07.049Z,true,Moved away,40.6
+2026-10-15,1,Kendra,52,2,W1-C45,W1 starbot C,starbot,C,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:32:23.717Z,true,Moved away,45.9
+2026-10-15,1,Kendra,53,1,W1-C11,W1 starbot A,starbot,A,Gray,false,alert,alert,cant_tell,false,2026-10-19T20:32:42.250Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,54,2,W1-C12,W1 starbot B,starbot,B,Kendra,true,moving,moving,not_eating,false,2026-10-19T20:32:59.598Z,true,Moved away,40.6
+2026-10-15,1,Kendra,55,2,W1-C19,W1 starbot D,starbot,D,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:33:17.698Z,true,No movement,
+2026-10-15,1,Kendra,56,1,W1-C14,W1 starbase B,starbase,B,Gray,false,alert,quiescent,not_eating,false,2026-10-19T20:33:41.997Z,true,Moved away,98.7
+2026-10-15,1,Kendra,57,2,W1-C24,W1 starbase C,starbase,C,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:34:01.296Z,true,Moved away,240.0
+2026-10-15,1,Kendra,58,2,W1-C23,W1 starbot A,starbot,A,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:34:17.865Z,true,No movement,
+2026-10-15,1,Kendra,59,2,W1-C07,W1 starbot D,starbot,D,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:34:36.581Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,60,2,W1-C31,W1 starbot D,starbot,D,Gray,false,alert,alert,not_eating,false,2026-10-19T20:34:55.780Z,true,No movement,
+2026-10-15,1,Kendra,61,2,W1-C33,W1 starbot D,starbot,D,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:35:12.764Z,true,No movement,
+2026-10-15,1,Kendra,62,2,W1-C41,W1 starbot A,starbot,A,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:35:29.364Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,63,2,W1-C22,W1 starbot C,starbot,C,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:35:51.881Z,true,No movement,
+2026-10-15,1,Kendra,64,2,W1-C13,W1 starbase A,starbase,A,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:36:09.031Z,true,Moved away,95.6
+2026-10-15,1,Kendra,65,2,W1-C01,W1 starbot A,starbot,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:36:33.864Z,true,No movement,
+2026-10-15,1,Kendra,66,2,W1-C20,W1 starbase B,starbase,B,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:36:52.233Z,true,Moved away,74.2
+2026-10-15,1,Kendra,67,2,W1-C38,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:37:09.131Z,true,Moved away,47.2
+2026-10-15,1,Kendra,68,2,W1-C42,W1 starbase B,starbase,B,Gray,false,alert,quiescent,not_eating,false,2026-10-19T20:37:26.448Z,true,Moved away,29.8
+2026-10-15,1,Kendra,69,2,W1-C35,W1 starbot B,starbot,B,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:37:43.295Z,true,Moved away,70.5
+2026-10-15,1,Kendra,70,2,W1-C10,W1 starbase B,starbase,B,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:38:03.579Z,true,Moved away,19.1
+2026-10-15,1,Kendra,71,2,W1-C17,W1 starbot D,starbot,D,Gray,false,alert,alert,cant_tell,false,2026-10-19T20:38:23.747Z,true,Moved away,187.3
+2026-10-15,1,Kendra,72,2,W1-C14,W1 starbase B,starbase,B,Gray,false,alert,alert,not_eating,false,2026-10-19T20:38:40.794Z,true,Moved away,98.7
+2026-10-15,1,Kendra,73,2,W1-C32,W1 starbase C,starbase,C,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:38:57.963Z,true,Moved away,52.5
+2026-10-15,1,Kendra,74,2,W1-C15,W1 starbase C,starbase,C,Gray,false,alert,alert,not_eating,false,2026-10-19T20:39:14.463Z,true,Moved away,102.5
+2026-10-15,1,Kendra,75,2,W1-C29,W1 starbase A,starbase,A,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:39:31.029Z,true,Moved away,71.2
+2026-10-15,1,Kendra,76,2,W1-C18,W1 starbot D,starbot,D,Kendra,true,alert,quiescent,not_eating,false,2026-10-19T20:39:52.912Z,true,Moved away,97.3
+2026-10-15,1,Kendra,77,2,W1-C04,W1 starbot C,starbot,C,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:40:09.531Z,true,Moved away,107.6
+2026-10-15,1,Kendra,78,2,W1-C30,W1 starbot B,starbot,B,Gray,false,alert,alert,not_eating,false,2026-10-19T20:40:28.628Z,true,Moved away,108.5
+2026-10-15,1,Kendra,79,2,W1-C21,W1 starbot A,starbot,A,Kendra,true,moving,alert,not_eating,false,2026-10-19T20:41:09.994Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,80,2,W1-C09,W1 starbase B,starbase,B,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:41:27.013Z,true,Moved away,86.4
+2026-10-15,1,Kendra,81,2,W1-C40,W1 starbot A,starbot,A,Kendra,true,quiescent,alert,not_eating,false,2026-10-19T20:41:43.779Z,true,No movement,
+2026-10-15,1,Kendra,82,2,W1-C44,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:42:00.428Z,true,Moved away,157.2
+2026-10-15,1,Kendra,83,2,W1-C27,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:42:25.428Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,84,2,W1-C34,W1 starbot B,starbot,B,Gray,false,moving,moving,not_eating,false,2026-10-19T20:42:42.796Z,true,Moved away,29.6
+2026-10-15,1,Kendra,85,2,W1-C25,W1 starbot B,starbot,B,Kendra,true,alert,alert,not_eating,false,2026-10-19T20:42:59.310Z,true,Moved away,100.7
+2026-10-15,1,Kendra,86,2,W1-C03,W1 starbase C,starbase,C,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:43:17.195Z,true,Moved away,76.5
+2026-10-15,1,Kendra,87,2,W1-C11,W1 starbot A,starbot,A,Gray,false,alert,alert,not_eating,false,2026-10-19T20:43:33.759Z,true,"Moved, didn't leave",
+2026-10-15,1,Kendra,88,2,W1-C16,W1 starbot A,starbot,A,Gray,false,alert,alert,not_eating,false,2026-10-19T20:43:51.377Z,true,Moved away,66.5
+2026-10-15,1,Kendra,89,2,W1-C28,W1 starbot B,starbot,B,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:44:08.059Z,true,Moved away,179.0
+2026-10-15,1,Kendra,90,2,W1-C06,W1 starbot C,starbot,C,Kendra,true,quiescent,quiescent,not_eating,false,2026-10-19T20:44:29.844Z,true,No movement,
+2026-10-15,1,Willem,1,1,W1-C24,W1 starbase C,starbase,C,Kendra,false,alert,quiescent,eating,false,2026-10-19T20:14:31.596Z,true,Moved away,240.0
+2026-10-15,1,Willem,2,1,W1-C39,W1 starbot C,starbot,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:16:07.896Z,true,Moved away,104.1
+2026-10-15,1,Willem,3,1,W1-C34,W1 starbot B,starbot,B,Gray,false,moving,moving,not_eating,false,2026-10-19T20:16:30.883Z,true,Moved away,29.6
+2026-10-15,1,Willem,4,1,W1-C36,W1 starbase A,starbase,A,Kendra,false,alert,moving,not_eating,false,2026-10-19T20:16:49.054Z,true,Moved away,46.2
+2026-10-15,1,Willem,5,1,W1-C42,W1 starbase B,starbase,B,Gray,false,alert,quiescent,not_eating,false,2026-10-19T20:17:12.838Z,true,Moved away,29.8
+2026-10-15,1,Willem,6,1,W1-C15,W1 starbase C,starbase,C,Gray,false,alert,quiescent,eating,false,2026-10-19T20:17:46.002Z,true,Moved away,102.5
+2026-10-15,1,Willem,7,1,W1-C14,W1 starbase B,starbase,B,Gray,false,alert,alert,eating,false,2026-10-19T20:18:07.632Z,true,Moved away,98.7
+2026-10-15,1,Willem,8,1,W1-C18,W1 starbot D,starbot,D,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:18:26.231Z,true,Moved away,97.3
+2026-10-15,1,Willem,9,1,W1-C32,W1 starbase C,starbase,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:18:46.064Z,true,Moved away,52.5
+2026-10-15,1,Willem,10,1,W1-C13,W1 starbase A,starbase,A,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:19:22.697Z,true,Moved away,95.6
+2026-10-15,1,Willem,11,1,W1-C07,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:19:51.373Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,12,1,W1-C03,W1 starbase C,starbase,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:20:12.044Z,false,Moved away,76.5
+2026-10-15,1,Willem,13,1,W1-C22,W1 starbot C,starbot,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:20:38.328Z,true,No movement,
+2026-10-15,1,Willem,14,2,W1-C18,W1 starbot D,starbot,D,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:20:58.982Z,true,Moved away,97.3
+2026-10-15,1,Willem,15,1,W1-C27,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:21:18.549Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,16,1,W1-C41,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,not_eating,false,2026-10-19T20:21:37.477Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,17,1,W1-C02,W1 starbase C,starbase,C,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:22:07.725Z,true,Moved away,40.6
+2026-10-15,1,Willem,18,1,W1-C17,W1 starbot D,starbot,D,Gray,false,alert,moving,eating,false,2026-10-19T20:22:26.049Z,true,Moved away,187.3
+2026-10-15,1,Willem,19,1,W1-C06,W1 starbot C,starbot,C,Kendra,false,quiescent,quiescent,eating,false,2026-10-19T20:23:13.346Z,true,No movement,
+2026-10-15,1,Willem,20,1,W1-C21,W1 starbot A,starbot,A,Kendra,false,moving,moving,eating,false,2026-10-19T20:23:39.969Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,21,1,W1-C08,W1 starbase A,starbase,A,Kendra,false,alert,alert,eating,false,2026-10-19T20:24:15.406Z,true,Moved away,51.9
+2026-10-15,1,Willem,22,1,W1-C20,W1 starbase B,starbase,B,Kendra,false,alert,moving,eating,false,2026-10-19T20:24:34.933Z,true,Moved away,74.2
+2026-10-15,1,Willem,23,1,W1-C01,W1 starbot A,starbot,A,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:24:57.030Z,true,No movement,
+2026-10-15,1,Willem,24,1,W1-C25,W1 starbot B,starbot,B,Kendra,false,alert,alert,eating,false,2026-10-19T20:25:28.156Z,true,Moved away,100.7
+2026-10-15,1,Willem,25,1,W1-C43,W1 starbase B,starbase,B,Kendra,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:25:56.959Z,true,Moved away,91.7
+2026-10-15,1,Willem,26,2,W1-C41,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:26:18.183Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,27,1,W1-C33,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:26:42.500Z,true,No movement,
+2026-10-15,1,Willem,28,1,W1-C26,W1 starbase B,starbase,B,Gray,false,quiescent,alert,eating,false,2026-10-19T20:27:21.124Z,true,Moved away,135.6
+2026-10-15,1,Willem,29,1,W1-C45,W1 starbot C,starbot,C,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:27:57.161Z,true,Moved away,45.9
+2026-10-15,1,Willem,30,1,W1-C23,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,cant_tell,false,2026-10-19T20:28:19.061Z,true,No movement,
+2026-10-15,1,Willem,31,2,W1-C43,W1 starbase B,starbase,B,Kendra,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:28:53.827Z,true,Moved away,91.7
+2026-10-15,1,Willem,32,1,W1-C35,W1 starbot B,starbot,B,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:29:23.737Z,true,Moved away,70.5
+2026-10-15,1,Willem,33,2,W1-C17,W1 starbot D,starbot,D,Gray,false,alert,moving,eating,false,2026-10-19T20:29:53.201Z,true,Moved away,187.3
+2026-10-15,1,Willem,34,1,W1-C44,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:30:18.260Z,true,Moved away,157.2
+2026-10-15,1,Willem,35,1,W1-C04,W1 starbot C,starbot,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:30:44.832Z,true,Moved away,107.6
+2026-10-15,1,Willem,36,2,W1-C01,W1 starbot A,starbot,A,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:31:21.991Z,true,No movement,
+2026-10-15,1,Willem,37,2,W1-C20,W1 starbase B,starbase,B,Kendra,false,alert,moving,eating,false,2026-10-19T20:31:40.613Z,true,Moved away,74.2
+2026-10-15,1,Willem,38,1,W1-C05,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:32:10.471Z,true,No movement,
+2026-10-15,1,Willem,39,1,W1-C11,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T20:32:31.878Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,40,1,W1-C16,W1 starbot A,starbot,A,Gray,false,alert,alert,cant_tell,false,2026-10-19T20:32:57.278Z,true,Moved away,66.5
+2026-10-15,1,Willem,41,2,W1-C27,W1 starbase C,starbase,C,Gray,false,quiescent,quiescent,not_eating,false,2026-10-19T20:33:24.873Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,42,2,W1-C23,W1 starbot A,starbot,A,Kendra,false,quiescent,quiescent,eating,false,2026-10-19T20:33:49.181Z,true,No movement,
+2026-10-15,1,Willem,43,1,W1-C37,W1 starbot B,starbot,B,Kendra,false,,quiescent,not_eating,false,2026-10-19T20:34:06.354Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,44,1,W1-C30,W1 starbot B,starbot,B,Gray,false,alert,alert,eating,false,2026-10-19T20:34:25.071Z,true,Moved away,108.5
+2026-10-15,1,Willem,45,2,W1-C03,W1 starbase C,starbase,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:34:55.678Z,true,Moved away,76.5
+2026-10-15,1,Willem,46,2,W1-C44,W1 starbase C,starbase,C,Gray,false,quiescent,alert,cant_tell,false,2026-10-19T20:35:27.096Z,true,Moved away,157.2
+2026-10-15,1,Willem,47,2,W1-C36,W1 starbase A,starbase,A,Kendra,false,alert,moving,not_eating,false,2026-10-19T20:35:45.552Z,true,Moved away,46.2
+2026-10-15,1,Willem,48,1,W1-C40,W1 starbot A,starbot,A,Kendra,false,quiescent,quiescent,eating,false,2026-10-19T20:36:21.794Z,true,No movement,
+2026-10-15,1,Willem,49,1,W1-C19,W1 starbot D,starbot,D,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:36:40.870Z,true,No movement,
+2026-10-15,1,Willem,50,1,W1-C38,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:37:11.134Z,true,Moved away,47.2
+2026-10-15,1,Willem,51,2,W1-C16,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T20:37:29.986Z,true,Moved away,66.5
+2026-10-15,1,Willem,52,2,W1-C30,W1 starbot B,starbot,B,Gray,false,alert,alert,eating,false,2026-10-19T20:38:19.090Z,true,Moved away,108.5
+2026-10-15,1,Willem,53,2,W1-C33,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:38:43.264Z,true,No movement,
+2026-10-15,1,Willem,54,2,W1-C07,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:39:02.697Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,55,2,W1-C19,W1 starbot D,starbot,D,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:39:20.882Z,true,No movement,
+2026-10-15,1,Willem,56,2,W1-C11,W1 starbot A,starbot,A,Gray,false,alert,alert,eating,false,2026-10-19T20:39:37.138Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,57,2,W1-C08,W1 starbase A,starbase,A,Kendra,false,alert,alert,eating,false,2026-10-19T20:39:53.399Z,true,Moved away,51.9
+2026-10-15,1,Willem,58,1,W1-C31,W1 starbot D,starbot,D,Gray,false,alert,alert,eating,false,2026-10-19T20:40:13.636Z,true,No movement,
+2026-10-15,1,Willem,59,1,W1-C09,W1 starbase B,starbase,B,Kendra,false,quiescent,alert,eating,false,2026-10-19T20:40:35.421Z,true,Moved away,86.4
+2026-10-15,1,Willem,60,1,W1-C10,W1 starbase B,starbase,B,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:40:54.185Z,true,Moved away,19.1
+2026-10-15,1,Willem,61,2,W1-C15,W1 starbase C,starbase,C,Gray,false,alert,alert,eating,false,2026-10-19T20:41:13.414Z,true,Moved away,102.5
+2026-10-15,1,Willem,62,1,W1-C29,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:41:45.722Z,true,Moved away,71.2
+2026-10-15,1,Willem,63,2,W1-C34,W1 starbot B,starbot,B,Gray,false,moving,moving,eating,false,2026-10-19T20:42:02.080Z,true,Moved away,29.6
+2026-10-15,1,Willem,64,2,W1-C38,W1 starbase A,starbase,A,Gray,false,quiescent,alert,cant_tell,false,2026-10-19T20:42:18.709Z,true,Moved away,47.2
+2026-10-15,1,Willem,65,2,W1-C09,W1 starbase B,starbase,B,Kendra,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:42:44.089Z,true,Moved away,86.4
+2026-10-15,1,Willem,66,1,W1-C28,W1 starbot B,starbot,B,Gray,false,quiescent,alert,eating,false,2026-10-19T20:43:01.980Z,true,Moved away,179.0
+2026-10-15,1,Willem,67,2,W1-C31,W1 starbot D,starbot,D,Gray,false,alert,alert,eating,false,2026-10-19T20:43:20.959Z,true,No movement,
+2026-10-15,1,Willem,68,2,W1-C32,W1 starbase C,starbase,C,Kendra,false,alert,alert,cant_tell,false,2026-10-19T20:44:07.173Z,true,Moved away,52.5
+2026-10-15,1,Willem,69,2,W1-C29,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:44:50.690Z,true,Moved away,71.2
+2026-10-15,1,Willem,70,2,W1-C39,W1 starbot C,starbot,C,Gray,false,quiescent,alert,cant_tell,false,2026-10-19T20:45:23.881Z,true,Moved away,104.1
+2026-10-15,1,Willem,71,2,W1-C45,W1 starbot C,starbot,C,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:45:44.950Z,true,Moved away,45.9
+2026-10-15,1,Willem,72,1,W1-C12,W1 starbot B,starbot,B,Kendra,false,moving,moving,eating,false,2026-10-19T20:46:09.677Z,true,Moved away,40.6
+2026-10-15,1,Willem,73,2,W1-C06,W1 starbot C,starbot,C,Kendra,false,quiescent,quiescent,eating,false,2026-10-19T20:46:30.934Z,true,No movement,
+2026-10-15,1,Willem,74,2,W1-C24,W1 starbase C,starbase,C,Kendra,false,alert,alert,eating,false,2026-10-19T20:46:48.830Z,true,Moved away,240.0
+2026-10-15,1,Willem,75,2,W1-C42,W1 starbase B,starbase,B,Gray,false,alert,alert,eating,false,2026-10-19T20:47:08.317Z,true,Moved away,29.8
+2026-10-15,1,Willem,76,2,W1-C22,W1 starbot C,starbot,C,Gray,false,quiescent,alert,eating,false,2026-10-19T20:47:25.852Z,true,No movement,
+2026-10-15,1,Willem,77,2,W1-C04,W1 starbot C,starbot,C,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:47:48.387Z,true,Moved away,107.6
+2026-10-15,1,Willem,78,2,W1-C21,W1 starbot A,starbot,A,Kendra,false,moving,moving,eating,false,2026-10-19T20:48:07.070Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,79,2,W1-C26,W1 starbase B,starbase,B,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:49:12.763Z,true,Moved away,135.6
+2026-10-15,1,Willem,80,2,W1-C05,W1 starbot D,starbot,D,Kendra,false,quiescent,quiescent,cant_tell,false,2026-10-19T20:49:32.833Z,true,No movement,
+2026-10-15,1,Willem,81,2,W1-C28,W1 starbot B,starbot,B,Gray,false,quiescent,alert,eating,false,2026-10-19T20:49:51.879Z,true,Moved away,179.0
+2026-10-15,1,Willem,82,2,W1-C02,W1 starbase C,starbase,C,Kendra,false,quiescent,quiescent,not_eating,false,2026-10-19T20:50:08.495Z,true,Moved away,40.6
+2026-10-15,1,Willem,83,2,W1-C25,W1 starbot B,starbot,B,Kendra,false,alert,alert,eating,false,2026-10-19T20:50:26.669Z,true,Moved away,100.7
+2026-10-15,1,Willem,84,2,W1-C12,W1 starbot B,starbot,B,Kendra,false,moving,moving,eating,false,2026-10-19T20:50:48.506Z,true,Moved away,40.6
+2026-10-15,1,Willem,85,2,W1-C14,W1 starbase B,starbase,B,Gray,false,alert,alert,eating,false,2026-10-19T20:51:04.843Z,true,Moved away,98.7
+2026-10-15,1,Willem,86,2,W1-C37,W1 starbot B,starbot,B,Kendra,false,,quiescent,cant_tell,false,2026-10-19T20:51:22.913Z,true,"Moved, didn't leave",
+2026-10-15,1,Willem,87,2,W1-C35,W1 starbot B,starbot,B,Kendra,false,alert,alert,not_eating,false,2026-10-19T20:51:46.956Z,true,Moved away,70.5
+2026-10-15,1,Willem,88,2,W1-C13,W1 starbase A,starbase,A,Gray,false,quiescent,alert,not_eating,false,2026-10-19T20:52:14.624Z,true,Moved away,95.6
+2026-10-15,1,Willem,89,2,W1-C10,W1 starbase B,starbase,B,Gray,false,quiescent,quiescent,eating,false,2026-10-19T20:52:36.590Z,true,Moved away,19.1
+2026-10-15,1,Willem,90,2,W1-C40,W1 starbot A,starbot,A,Kendra,false,quiescent,alert,eating,false,2026-10-19T20:52:54.323Z,true,No movement,
