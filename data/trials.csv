@@ -1,0 +1,102 @@
+round,week,trial,trial_number,clip,star,review,tank,camera,poker,live_state,entry_time,entry_to_poke_s,poke_to_first_movement_s,poke_to_move_away_s,poke_to_exit_s,outcome,notes
+2026-10-15,1,3,1,W1-C37,W1 starbot B,Reviewed,starbot,B,Kendra,,2026-10-15T13:23:10.000-07:00,27.0,148.0,,267.0,"Moved, didn't leave",
+2026-10-15,1,4,1,W1-C21,W1 starbot A,Reviewed,starbot,A,Kendra,moving,2026-10-15T13:38:24.332-07:00,4.5,18.5,,302.6,"Moved, didn't leave","eating, did not want to leave his food target"
+2026-10-15,1,5,1,W1-C07,W1 starbot D,Reviewed,starbot,D,Kendra,quiescent,2026-10-15T13:44:03.511-07:00,3.9,19.1,,309.2,"Moved, didn't leave",after first movement body shifted lower into column then stopped. Food blocking path
+2026-10-15,1,6,1,W1-C06,W1 starbot C,Reviewed,starbot,C,Kendra,quiescent,2026-10-15T13:49:34.982-07:00,4.2,,,303.7,No movement,"stayed curled/tucked, became sort of a potato shape"
+2026-10-15,1,7,1,W1-C27,W1 starbase C,Reviewed,starbase,C,Gray,quiescent,2026-10-15T13:56:08.626-07:00,1.8,19.8,,,"Moved, didn't leave",started to clamp down in a ball
+2026-10-15,1,8,1,,W1 starbase A,Left out when clips were checked,starbase,A,Gray,quiescent,2026-10-15T14:01:33.267-07:00,2.7,82.5,89.2,93.7,Moved away,
+2026-10-15,1,9,1,W1-C26,W1 starbase B,Reviewed,starbase,B,Gray,quiescent,2026-10-15T14:03:38.683-07:00,5.2,47.6,135.6,170.2,Moved away,
+2026-10-15,1,10,1,W1-C30,W1 starbot B,Reviewed,starbot,B,Gray,alert,2026-10-15T14:08:34.277-07:00,8.8,43.3,108.5,134.9,Moved away,walked over food
+2026-10-15,1,11,1,W1-C16,W1 starbot A,Reviewed,starbot,A,Gray,alert,2026-10-15T14:11:33.002-07:00,3.8,30.1,66.5,88.4,Moved away,
+2026-10-15,1,12,1,W1-C17,W1 starbot D,Reviewed,starbot,D,Gray,alert,2026-10-15T14:13:20.601-07:00,1.4,70.9,187.3,205.3,Moved away,eating
+2026-10-15,1,13,1,W1-C22,W1 starbot C,Reviewed,starbot,C,Gray,quiescent,2026-10-15T14:17:52.038-07:00,1.0,,,311.3,No movement,"bulging before trial, stuck tentacle through hole"
+2026-10-15,1,14,1,W1-C24,W1 starbase C,Reviewed,starbase,C,Kendra,alert,2026-10-15T14:24:40.114-07:00,4.1,229.4,240.0,266.8,Moved away,scrunch and tucking arms almost took a lot to move away
+2026-10-15,1,15,1,W1-C08,W1 starbase A,Reviewed,starbase,A,Kendra,alert,2026-10-15T14:29:46.846-07:00,2.1,44.1,51.9,60.4,Moved away,
+2026-10-15,1,16,1,W1-C43,W1 starbase B,Reviewed,starbase,B,Kendra,quiescent,2026-10-15T14:31:43.148-07:00,2.6,72.8,91.7,107.5,Moved away,
+2026-10-15,1,17,1,W1-C35,W1 starbot B,Reviewed,starbot,B,Kendra,alert,2026-10-15T14:40:03.796-07:00,3.1,51.2,70.5,78.3,Moved away,"was half flipped when poking started, underside was exposed. fliped back and moved away quickly"
+2026-10-15,1,18,1,W1-C40,W1 starbot A,Reviewed,starbot,A,Kendra,quiescent,2026-10-15T14:42:04.825-07:00,1.4,,,299.1,No movement,"stuck to wall, latched - could be on top of food?"
+2026-10-15,1,19,1,W1-C18,W1 starbot D,Reviewed,starbot,D,Kendra,alert,2026-10-15T14:47:45.186-07:00,0.8,27.7,97.3,113.7,Moved away,"flipping up towards the surface of the water, coming back down to the side of the tube"
+2026-10-15,1,20,1,W1-C04,W1 starbot C,Reviewed,starbot,C,Kendra,alert,2026-10-15T14:50:16.046-07:00,3.2,93.0,107.6,112.9,Moved away,
+2026-10-15,1,21,1,W1-C03,W1 starbase C,Reviewed,starbase,C,Gray,quiescent,2026-10-15T14:54:22.099-07:00,4.2,63.8,76.5,142.0,Moved away,exited with side opposite from poke5
+2026-10-15,1,22,1,W1-C38,W1 starbase A,Reviewed,starbase,A,Gray,quiescent,2026-10-15T14:56:53.974-07:00,6.5,22.7,47.2,53.7,Moved away,
+2026-10-15,1,23,1,W1-C42,W1 starbase B,Reviewed,starbase,B,Gray,alert,2026-10-15T14:58:21.595-07:00,1.7,18.7,29.8,56.0,Moved away,galloping
+2026-10-15,1,24,1,W1-C28,W1 starbot B,Reviewed,starbot,B,Gray,quiescent,2026-10-15T15:12:12.361-07:00,22.9,19.0,179.0,202.1,Moved away,moved in direction of poke
+2026-10-15,1,25,1,W1-C01,W1 starbot A,Reviewed,starbot,A,Gray,quiescent,2026-10-15T15:16:05.552-07:00,8.9,,,304.1,No movement,"slowly started flipping, but no full movement"
+2026-10-15,1,26,1,W1-C31,W1 starbot D,Reviewed,starbot,D,Gray,alert,2026-10-15T15:22:12.066-07:00,2.3,,,291.2,No movement,"eating, slight aggitation"
+2026-10-15,1,27,1,W1-C39,W1 starbot C,Reviewed,starbot,C,Gray,quiescent,2026-10-15T15:27:13.670-07:00,11.0,88.7,104.1,109.1,Moved away,very aggitated
+2026-10-15,1,28,1,W1-C02,W1 starbase C,Reviewed,starbase,C,Kendra,quiescent,2026-10-15T15:31:48.527-07:00,1.7,28.7,40.6,56.1,Moved away,super quick to move away
+2026-10-15,1,29,1,W1-C36,W1 starbase A,Reviewed,starbase,A,Kendra,alert,2026-10-15T15:33:16.429-07:00,3.7,38.0,46.2,71.0,Moved away,moved away opposite from where poking was happening
+2026-10-15,1,30,1,W1-C09,W1 starbase B,Reviewed,starbase,B,Kendra,quiescent,2026-10-15T15:34:47.676-07:00,10.3,72.2,86.4,99.9,Moved away,less agitated
+2026-10-15,1,31,1,W1-C12,W1 starbot B,Reviewed,starbot,B,Kendra,moving,2026-10-15T15:44:22.709-07:00,2.1,13.5,40.6,47.7,Moved away,was moving/upside down when poking started flipped quickly and moved away
+2026-10-15,1,32,1,W1-C23,W1 starbot A,Reviewed,starbot,A,Kendra,quiescent,2026-10-15T15:45:37.417-07:00,2.4,,,372.8,No movement,"Completly clamping down does not want to move, STUBBORN , all its arms are twisted on top of each other (star in B is still running around)"
+2026-10-15,1,33,1,W1-C33,W1 starbot D,Reviewed,starbot,D,Kendra,quiescent,2026-10-15T15:53:27.101-07:00,1.1,,,299.8,No movement,no movement - hunkered down
+2026-10-15,1,34,1,W1-C45,W1 starbot C,Reviewed,starbot,C,Kendra,quiescent,2026-10-15T15:58:46.075-07:00,2.0,19.5,45.9,53.3,Moved away,
+2026-10-15,1,35,1,W1-C15,W1 starbase C,Reviewed,starbase,C,Gray,alert,2026-10-15T16:02:25.129-07:00,7.3,78.4,102.5,115.8,Moved away,eating muscle
+2026-10-15,1,36,1,W1-C29,W1 starbase A,Reviewed,starbase,A,Gray,quiescent,2026-10-15T16:04:35.657-07:00,12.1,45.1,71.2,87.2,Moved away,
+2026-10-15,1,37,1,W1-C14,W1 starbase B,Reviewed,starbase,B,Gray,alert,2026-10-15T16:06:33.901-07:00,2.9,24.2,98.7,102.8,Moved away,eating
+2026-10-15,1,38,1,W1-C34,W1 starbot B,Reviewed,starbot,B,Gray,moving,2026-10-15T16:13:59.920-07:00,8.4,23.9,29.6,31.3,Moved away,
+2026-10-15,1,39,1,W1-C11,W1 starbot A,Reviewed,starbot,A,Gray,alert,2026-10-15T16:15:21.632-07:00,1.3,75.0,,272.9,"Moved, didn't leave",arms interfering with poker
+2026-10-15,1,40,1,W1-C19,W1 starbot D,Reviewed,starbot,D,Gray,quiescent,2026-10-15T16:20:10.440-07:00,1.3,,,307.2,No movement,
+2026-10-15,1,41,1,,W1 starbot C,No clip (no footage for this trial),starbot,C,Gray,moving,2026-10-15T16:25:47.173-07:00,,,,,No movement,
+2026-10-15,1,42,1,W1-C32,W1 starbase C,Reviewed,starbase,C,Kendra,alert,2026-10-15T16:32:48.546-07:00,15.6,10.6,52.5,63.3,Moved away,after poking and done went and got food
+2026-10-15,1,43,1,,W1 starbase A,No clip (no footage for this trial),starbase,A,Kendra,moving,2026-10-15T16:34:34.883-07:00,,,,,No movement,
+2026-10-15,1,44,1,W1-C20,W1 starbase B,Reviewed,starbase,B,Kendra,alert,2026-10-15T16:34:55.240-07:00,4.7,63.5,74.2,89.0,Moved away,"eating when first poke occured, when moving away took mussel with it"
+2026-10-15,1,45,1,W1-C25,W1 starbot B,Reviewed,starbot,B,Kendra,alert,2026-10-15T16:45:37.228-07:00,1.6,69.9,100.7,115.2,Moved away,eating? when poking started
+2026-10-15,1,46,1,W1-C41,W1 starbot A,Reviewed,starbot,A,Kendra,quiescent,2026-10-15T16:47:51.882-07:00,1.9,59.1,,300.2,"Moved, didn't leave","does not care or seem to be bothered by the pokes, arms started to reach out and try and move/block the poking tool, moving slightly towards poking side. started to move away once poking was done"
+2026-10-15,1,47,1,W1-C05,W1 starbot D,Reviewed,starbot,D,Kendra,quiescent,2026-10-15T16:53:32.964-07:00,3.0,,,303.5,No movement,curled with its arms tucked
+2026-10-15,1,48,1,,W1 starbot C,No clip (no footage for this trial),starbot,C,Kendra,moving,2026-10-15T16:58:51.740-07:00,,,,,No movement,
+2026-10-15,1,49,1,W1-C44,W1 starbase C,Reviewed,starbase,C,Gray,quiescent,2026-10-15T17:01:01.182-07:00,12.0,19.1,157.2,165.6,Moved away,
+2026-10-15,1,50,1,W1-C13,W1 starbase A,Reviewed,starbase,A,Gray,quiescent,2026-10-15T17:04:07.496-07:00,6.5,70.4,95.6,99.0,Moved away,
+2026-10-15,1,51,1,W1-C10,W1 starbase B,Reviewed,starbase,B,Gray,quiescent,2026-10-15T17:06:04.696-07:00,4.4,11.1,19.1,20.0,Moved away,"very aggitated, moved away quick"
+2026-10-22,2,52,2,W2-C06,W2 starbot B,Reviewed,starbot,B,Gray,alert,2026-10-22T13:11:59.662-07:00,8.7,173.1,254.3,269.1,Moved away,"possibly eating, shell nearby, movement rocking back and forth away from"
+2026-10-22,2,53,2,W2-C08,W2 starbot A,Reviewed,starbot,A,Gray,quiescent,2026-10-22T13:16:51.052-07:00,4.5,169.8,204.4,211.0,Moved away,
+2026-10-22,2,54,2,,W2 starbot D,No clip (no footage for this trial),starbot,D,Gray,moving,2026-10-22T13:20:52.561-07:00,,,,,No movement,
+2026-10-22,2,55,2,W2-C21,W2 starbot C,Reviewed,starbot,C,Gray,alert,2026-10-22T13:21:08.015-07:00,3.7,34.4,,301.9,"Moved, didn't leave",appears to be eating
+2026-10-22,2,56,2,W2-C18,W2 starbase B,Reviewed,starbase,B,Gray,alert,2026-10-22T13:27:30.735-07:00,1.3,30.4,99.7,111.8,Moved away,"has hold of muscle, eating was moving in direction of poke"
+2026-10-22,2,57,2,W2-C14,W2 starbase A,Reviewed,starbase,A,Gray,quiescent,2026-10-22T13:29:33.182-07:00,2.5,20.0,35.8,37.9,Moved away,
+2026-10-22,2,58,2,W2-C10,W2 starbase C,Reviewed,starbase,C,Gray,alert,2026-10-22T13:30:30.114-07:00,1.0,23.3,37.1,56.3,Moved away,eating
+2026-10-22,2,59,2,W2-C19,W2 starbot B,Reviewed,starbot,B,Kendra,alert,2026-10-22T13:50:14.310-07:00,2.6,36.5,50.7,58.4,Moved away,was holding on to the mussel but dropped after it started to run
+2026-10-22,2,60,2,W2-C09,W2 starbot A,Reviewed,starbot,A,Kendra,quiescent,2026-10-22T13:52:00.997-07:00,2.9,88.5,109.9,120.7,Moved away,
+2026-10-22,2,61,2,W2-C20,W2 starbot D,Reviewed,starbot,D,Kendra,alert,2026-10-22T13:54:59.362-07:00,35.2,166.7,,302.4,"Moved, didn't leave",trying to grab the hair as its being poked
+2026-10-22,2,62,2,W2-C15,W2 starbot C,Reviewed,starbot,C,Kendra,moving,2026-10-22T14:01:03.342-07:00,1.1,,,301.6,No movement,eating when poking was started fully clamed
+2026-10-22,2,63,2,W2-C04,W2 starbase C,Reviewed,starbase,C,Kendra,alert,2026-10-22T14:07:12.277-07:00,1.9,33.1,46.6,58.2,Moved away,
+2026-10-22,2,64,2,W2-C03,W2 starbase A,Reviewed,starbase,A,Kendra,alert,2026-10-22T14:08:39.921-07:00,4.0,16.9,27.1,45.0,Moved away,
+2026-10-22,2,65,2,W2-C13,W2 starbase B,Reviewed,starbase,B,Kendra,alert,2026-10-22T14:09:42.260-07:00,7.0,15.1,38.5,55.2,Moved away,holding a mussel
+2026-10-22,2,66,2,W2-C01,W2 starbot B,Reviewed,starbot,B,Gray,alert,2026-10-22T14:23:10.957-07:00,3.2,19.5,100.0,109.2,Moved away,eating?
+2026-10-22,2,67,2,W2-C25,W2 starbot A,Reviewed,starbot,A,Gray,alert,2026-10-22T14:25:34.790-07:00,3.4,76.1,228.3,229.2,Moved away,
+2026-10-22,2,68,2,W2-C05,W2 starbot D,Reviewed,starbot,D,Gray,alert,2026-10-22T14:31:20.641-07:00,12.1,21.3,,315.2,"Moved, didn't leave","aggitated, clamping down"
+2026-10-22,2,69,2,,W2 starbot C,No clip (no footage for this trial),starbot,C,Gray,moving,2026-10-22T14:37:40.925-07:00,,,,,No movement,
+2026-10-22,2,70,2,W2-C28,W2 starbase B,Reviewed,starbase,B,Gray,alert,2026-10-22T14:41:08.358-07:00,8.6,11.1,77.1,86.2,Moved away,"eating, now at top of water column moving towards the poke"
+2026-10-22,2,71,2,W2-C07,W2 starbase A,Reviewed,starbase,A,Gray,alert,2026-10-22T14:43:03.759-07:00,8.5,24.2,60.6,62.0,Moved away,
+2026-10-22,2,72,2,W2-C22,W2 starbase C,Reviewed,starbase,C,Gray,alert,2026-10-22T14:44:27.611-07:00,1.4,51.3,60.3,61.5,Moved away,
+2026-10-22,2,73,2,,W2 starbot B,No clip (no footage for this trial),starbot,B,Kendra,moving,2026-10-22T15:07:58.167-07:00,,,,,No movement,
+2026-10-22,2,74,2,,W2 starbot A,No clip (no footage for this trial),starbot,A,Kendra,moving,2026-10-22T15:08:08.517-07:00,,,,,No movement,
+2026-10-22,2,75,2,W2-C23,W2 starbot D,Reviewed,starbot,D,Kendra,quiescent,2026-10-22T15:08:26.788-07:00,6.1,,,302.4,No movement,became alert after pokes but very stubborn
+2026-10-22,2,76,2,,W2 starbot C,No clip (no footage for this trial),starbot,C,Kendra,moving,2026-10-22T15:14:03.434-07:00,,,,,No movement,
+2026-10-22,2,77,2,,W2 starbase A,No clip (no footage for this trial),starbase,A,Kendra,moving,2026-10-22T15:17:35.753-07:00,,,,,No movement,
+2026-10-22,2,78,2,,W2 starbase B,No clip (no footage for this trial),starbase,B,Kendra,moving,2026-10-22T15:17:47.765-07:00,,,,,No movement,
+2026-10-22,2,79,2,,W2 starbase C,No clip (no footage for this trial),starbase,C,Kendra,,2026-10-22T15:18:05.504-07:00,,,,,No movement,
+2026-10-22,2,80,2,,W2 starsense A,Left out when clips were checked,starsense,A,Kendra,quiescent,2026-10-22T15:19:52.624-07:00,5.5,,,304.0,No movement,
+2026-10-22,2,81,2,,W2 starsense B,Left out when clips were checked,starsense,B,Kendra,quiescent,2026-10-22T15:27:14.012-07:00,3.8,229.6,289.4,299.4,Moved away,"grabbed poking hair , does not want to be poked"
+2026-10-22,2,82,2,,W2 starbot B,No clip (no footage for this trial),starbot,B,Gray,moving,2026-10-22T15:39:13.313-07:00,,,,,No movement,
+2026-10-22,2,83,2,,W2 starbot A,No clip (no footage for this trial),starbot,A,Gray,moving,2026-10-22T15:39:23.798-07:00,,,,,No movement,
+2026-10-22,2,84,2,W2-C16,W2 starbot D,Reviewed,starbot,D,Gray,quiescent,2026-10-22T15:47:33.700-07:00,0.7,285.3,299.7,302.8,Moved away,
+2026-10-22,2,85,2,,W2 starbot C,No clip (no footage for this trial),starbot,C,Gray,moving,2026-10-22T15:52:54.827-07:00,,,,,No movement,
+2026-10-22,2,86,2,W2-C26,W2 starbase B,Reviewed,starbase,B,Gray,alert,2026-10-22T15:53:46.816-07:00,1.1,23.1,46.7,47.9,Moved away,
+2026-10-22,2,87,2,W2-C17,W2 starbase A,Reviewed,starbase,A,Gray,alert,2026-10-22T15:54:45.617-07:00,2.2,11.8,27.8,29.7,Moved away,moved away with muscle
+2026-10-22,2,88,2,W2-C02,W2 starbase C,Reviewed,starbase,C,Gray,alert,2026-10-22T15:55:39.460-07:00,2.2,18.0,70.6,72.8,Moved away,
+2026-10-22,2,89,2,,W2 starsense A,Left out when clips were checked,starsense,A,Gray,quiescent,2026-10-22T15:57:52.435-07:00,16.1,36.3,,302.2,"Moved, didn't leave",
+2026-10-22,2,90,2,,W2 starsense B,Left out when clips were checked,starsense,B,Gray,quiescent,2026-10-22T16:03:33.512-07:00,3.7,107.6,204.9,205.9,Moved away,
+2026-10-22,2,91,2,,W2 starbot B,No clip (no footage for this trial),starbot,B,Gray,moving,2026-10-22T16:10:14.436-07:00,,,,,No movement,
+2026-10-22,2,92,2,,W2 starbot A,No clip (no footage for this trial),starbot,A,Gray,moving,2026-10-22T16:10:22.955-07:00,,,,,No movement,
+2026-10-22,2,93,2,,W2 starbot D,No clip (no footage for this trial),starbot,D,Gray,moving,2026-10-22T16:23:31.774-07:00,,,,,No movement,
+2026-10-22,2,94,2,,W2 starbot C,No clip (no footage for this trial),starbot,C,Gray,moving,2026-10-22T16:23:39.605-07:00,,,,,No movement,
+2026-10-22,2,95,2,W2-C12,W2 starbase C,Reviewed,starbase,C,Kendra,alert,2026-10-22T16:27:37.054-07:00,3.7,56.4,61.1,68.4,Moved away,
+2026-10-22,2,96,2,,W2 starbase A,No clip (no footage for this trial),starbase,A,Kendra,moving,2026-10-22T16:29:02.616-07:00,,,,,No movement,
+2026-10-22,2,97,2,W2-C27,W2 starbase B,Reviewed,starbase,B,Kendra,alert,2026-10-22T16:29:18.470-07:00,4.6,45.3,57.9,65.3,Moved away,
+2026-10-22,2,98,2,,W2 starsense A,Left out when clips were checked,starsense,A,Kendra,quiescent,2026-10-22T16:34:13.092-07:00,2.0,80.2,102.0,107.2,Moved away,
+2026-10-22,2,99,2,,W2 starsense B,Left out when clips were checked,starsense,B,Kendra,alert,2026-10-22T16:37:10.571-07:00,12.9,,,302.0,No movement,trying to grab poking hair
+2026-10-22,2,100,2,W2-C24,W2 starbot B,Reviewed,starbot,B,Gray,alert,2026-10-22T16:44:16.123-07:00,2.8,59.4,79.4,89.1,Moved away,"eating, partially submerged abandoned muscle when moving away"
+2026-10-22,2,101,2,,W2 starbot A,No clip (no footage for this trial),starbot,A,Gray,moving,2026-10-22T16:46:20.667-07:00,,,,,No movement,
+2026-10-22,2,102,2,,W2 starbot D,No clip (no footage for this trial),starbot,D,Gray,moving,2026-10-22T16:55:42.008-07:00,,,,,No movement,
+2026-10-22,2,103,2,W2-C11,W2 starbot C,Reviewed,starbot,C,Gray,alert,2026-10-22T16:55:52.463-07:00,0.8,53.8,,316.1,"Moved, didn't leave",eating

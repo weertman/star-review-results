@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Star Review results</title>
+<link rel="stylesheet" href="site.css?v=20261026T154714">
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="shim.js?v=20261026T154714"></script>
+</head>
+<body>
+<nav class="site-bar" aria-label="Sections">
+  <span class="site-name">Star Review results</span>
+  <a href="#experiment">Experiment</a>
+  <a href="#examples">Examples</a>
+  <a href="#stars">Stars</a>
+  <a href="#progress">Progress</a>
+  <a href="#agreement">Agreement</a>
+  <a href="#usage">Answer habits</a>
+  <a href="#consistency">Consistency</a>
+  <a href="#outcome">Response</a>
+  <a href="#response-time">Response time</a>
+  <a href="#by-annotator">By annotator</a>
+  <a href="#tanks">Tanks</a>
+  <a href="#weeks">Weeks</a>
+  <a href="#stats">Stats</a>
+  <a href="#methods">Methods</a>
+</nav>
+<main id="dash-root">
+<style>
+  .sr { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); max-width: 82rem; margin-inline: auto; }
+  .sr h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.2; margin: 0; }
+  .sr-lede { font-size: var(--cds-font-size-body); margin: var(--cds-gap-sm) 0 0; max-width: 72ch; line-height: 1.5; }
+  .sr-meta { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-xs) 0 0; }
+  .sr-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+  .sr-tile, .sr-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+  .sr-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .sr-tile-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.2; margin-top: var(--cds-gap-xs); }
+  .sr-of { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); color: var(--color-fg-muted); }
+  .sr-tile-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); }
+  .sr-section { display: grid; gap: var(--cds-gap-md); }
+  .sr-section > h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-lg) 0 0; }
+  .sr-intro { margin: 0; color: var(--color-fg-muted); max-width: 75ch; line-height: 1.5; }
+  .sr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+  .sr-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .sr-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
+  .sr-select { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 3px 8px; }
+  .sr-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+  .sr-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+  .sr-chart { position: relative; min-height: 120px; }
+  .sr-chart svg { display: block; overflow: visible; }
+  .sr-chart text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .sr-chart .sr-strong { fill: var(--color-fg); }
+  .sr-chart .sr-in { fill: var(--color-bg); }
+  .sr-chart .sr-gridline { stroke: var(--cds-chart-grid); stroke-width: 1; }
+  .sr-chart .sr-axisline { stroke: var(--cds-chart-axis); stroke-width: 1; }
+  .sr-chart .sr-ref { stroke: var(--cds-chart-reference); stroke-width: 1; stroke-dasharray: 4 3; }
+  .sr-chart .sr-rule { stroke: var(--cds-chart-axis); stroke-width: 1; pointer-events: none; }
+  .sr-chart .sr-trend { fill: none; stroke: var(--cds-chart-axis); stroke-width: 1.5; stroke-linejoin: round; }
+  .sr-chart .sr-sd { stroke: var(--color-fg-muted); stroke-width: 1.5; }
+  .sr-chart .sr-live { fill: none; stroke: var(--color-fg); stroke-width: 1.2; }
+  .sr-chart .sr-hollow { fill: var(--color-panel); stroke: var(--color-fg); stroke-width: 1.5; }
+  .sr-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: var(--cds-gap-sm); }
+  .sr-key { display: inline-flex; align-items: center; gap: 6px; }
+  .sr-swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; display: inline-block; }
+  .sr-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 22rem; }
+  .sr-tip-head { color: var(--cds-text-secondary); margin-bottom: 2px; }
+  .sr-tip-row { display: flex; align-items: center; gap: 6px; font-variant-numeric: tabular-nums; }
+  .sr-failed { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 120px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .sr-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  .sr-toggle { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+  .sr-toggle button { font: inherit; font-size: var(--cds-font-size-caption); background: none; border: 0; padding: 4px 12px; color: var(--color-fg-muted); cursor: pointer; }
+  .sr-toggle button[aria-pressed=true] { background: var(--color-bg); color: var(--color-fg); }
+  .sr-table-box { max-height: 28rem; overflow: auto; }
+  .sr-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .sr-table th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; padding: 6px 8px; }
+  .sr-table th:has(button) { padding: 0; }
+  .sr-table th button { font: inherit; background: none; border: 0; color: inherit; padding: 6px 8px; cursor: pointer; text-align: inherit; width: 100%; }
+  .sr-table th.num, .sr-table td.num { text-align: right; }
+  .sr-table td { padding: 5px 8px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .sr-details summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-md); }
+  .sr-context { display: grid; gap: var(--cds-gap-sm); max-width: 75ch; line-height: 1.55; margin: 0; }
+  .sr-context p { margin: 0; }
+  .sr-guide ul { margin: var(--cds-gap-sm) 0 0; padding-left: 1.1rem; display: grid; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); line-height: 1.5; color: var(--color-fg-muted); }
+  .sr-guide b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .sr-table td.sr-wrap, #table-stats td { white-space: normal; min-width: 7rem; }
+  #table-stats td.num { white-space: nowrap; min-width: 0; }
+  .sr-showcase { display: block; width: 100%; height: auto; border-radius: var(--cds-radius); background: #0b0d0e; }
+  .sr-methods dl { display: grid; grid-template-columns: minmax(8rem, 12rem) 1fr; gap: var(--cds-gap-sm) var(--cds-gap-lg); margin: 0; font-size: var(--cds-font-size-caption); line-height: 1.5; }
+  .sr-methods dt { font-weight: var(--cds-font-weight-medium); }
+  .sr-methods dd { margin: 0; color: var(--color-fg-muted); }
+  @media (max-width: 40rem) { .sr-table .sr-wide { display: none; } .sr-methods dl { grid-template-columns: 1fr; } }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="sr">
+  <header id="top">
+    <h1>Pre-poke state: what the annotators saw</h1>
+    <p class="sr-lede" id="takeaway">Annotators agree <span id="band-state">—</span> on the star's state before poking (α <span data-source="alpha" data-where="question=state" data-field="alpha" data-fmt="stat">—</span>) and <span id="band-eating">—</span> on whether it was eating (α <span data-source="alpha" data-where="question=eating" data-field="alpha" data-fmt="stat">—</span>). Clips the group called alert went on to move away when poked <span data-source="outcome" data-where="basis=Group call&amp;state=alert&amp;outcome=Moved away" data-field="share" data-fmt="pct">—</span> of the time, against <span data-source="outcome" data-where="basis=Group call&amp;state=quiescent&amp;outcome=Moved away" data-field="share" data-fmt="pct">—</span> for clips called quiescent.</p>
+    <p class="sr-meta"><span data-source="overview" data-field="weeks" data-fmt="count">—</span> week(s) of poking, <span data-source="overview" data-field="first_round" data-fmt="date">—</span> to <span data-source="overview" data-field="last_round" data-fmt="date">—</span>, <span data-source="overview" data-field="stars" data-fmt="count">—</span> stars · answers up to <span data-source="overview" data-field="last_answer" data-fmt="datetime">—</span> · <span data-source="overview" data-field="finished" data-fmt="count">—</span> of <span data-source="overview" data-field="annotators" data-fmt="count">—</span> annotators have answered every clip so far.</p>
+    <p class="sr-meta">Charts of single trials show one week at a time: <label><select class="sr-select sr-week-select" aria-label="Week shown"></select></label></p>
+  </header>
+
+  <section class="sr-tiles" id="headline" aria-label="Headline figures">
+    <div class="sr-tile">
+      <div class="sr-tile-label">Answers in</div>
+      <div class="sr-tile-value"><span data-source="overview" data-field="answered" data-fmt="count">—</span><span class="sr-of"> of <span data-source="overview" data-field="total" data-fmt="count">—</span></span></div>
+      <div class="sr-tile-note">From <span data-source="overview" data-field="clips" data-fmt="count">—</span> clips, each shown twice</div>
+    </div>
+    <div class="sr-tile">
+      <div class="sr-tile-label">Agreement on state (α)</div>
+      <div class="sr-tile-value"><span data-source="alpha" data-where="question=state" data-field="alpha" data-fmt="stat">—</span></div>
+      <div class="sr-tile-note"><span id="noun-state">—</span> · <span data-source="alpha" data-where="question=state" data-field="clips" data-fmt="count">—</span> clips</div>
+    </div>
+    <div class="sr-tile">
+      <div class="sr-tile-label">Agreement on eating (α)</div>
+      <div class="sr-tile-value"><span data-source="alpha" data-where="question=eating" data-field="alpha" data-fmt="stat">—</span></div>
+      <div class="sr-tile-note"><span id="noun-eating">—</span> · <span data-source="alpha" data-where="question=eating" data-field="clips" data-fmt="count">—</span> clips</div>
+    </div>
+    <div class="sr-tile">
+      <div class="sr-tile-label">Group call vs live call (κ)</div>
+      <div class="sr-tile-value"><span data-source="agreement" data-where="kind=live&amp;question=state&amp;a=Group call" data-field="kappa" data-fmt="stat">—</span></div>
+      <div class="sr-tile-note">Same call on <span data-source="agreement" data-where="kind=live&amp;question=state&amp;a=Group call" data-field="agreement" data-fmt="pct">—</span> of <span data-source="agreement" data-where="kind=live&amp;question=state&amp;a=Group call" data-field="n" data-fmt="count">—</span> clips</div>
+    </div>
+    <div class="sr-tile">
+      <div class="sr-tile-label">Moved away after an alert call</div>
+      <div class="sr-tile-value"><span data-source="outcome" data-where="basis=Group call&amp;state=alert&amp;outcome=Moved away" data-field="share" data-fmt="pct">—</span></div>
+      <div class="sr-tile-note"><span data-source="outcome" data-where="basis=Group call&amp;state=alert&amp;outcome=Moved away" data-field="clips" data-fmt="count">—</span> of <span data-source="outcome" data-where="basis=Group call&amp;state=alert&amp;outcome=Moved away" data-field="of" data-fmt="count">—</span> clips · <span data-source="outcome" data-where="basis=Group call&amp;state=quiescent&amp;outcome=Moved away" data-field="share" data-fmt="pct">—</span> after a quiescent call</div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="experiment">
+    <h2>The experiment</h2>
+    <div class="sr-context">
+      <p>Each Thursday, Gray and Kendra poke sea stars in the lab's camera tanks for up to about five minutes per star, so the stars aren't over-stressed. With the Poke Trial Logger they record when they enter, the first poke, the first movement, when the star moves away, and when they leave. As they enter, the poker also calls how the star seemed before poking: quiescent, alert or moving. Not every star wakes up and moves away in that time.</p>
+      <p>That live call is quick and made by someone about to poke, so it may not be reliable. To check it, annotators make the same call blind, usually on the Monday after: they watch the five minutes before the poker entered, sped up 20× into a 15-second loop and cropped to the one tank, on the Star Review site. Each annotator sees every clip twice in a shuffled order, at least five clips apart, must watch a full loop before answering, and can only step back a few clips. They also say whether the star was eating. They never see each other's answers, the live call, or what the star did when poked.</p>
+      <p>The study runs a round like this every week for eight weeks, with a new star in each container each week, so no star is tested twice on this assay; within its poking day a star is poked several times. This page pools every week so far, and updates as rounds and answers are added. It asks: do annotators agree on what they see, does the state they see predict whether the star responds to poking, and does it change how fast?</p>
+    </div>
+    <div class="sr-card" id="card-schematic">
+      <h3>One trial, to scale</h3>
+      <p class="sr-note">Where the clip sits relative to the poke. Step times are medians over every trial so far.</p>
+      <div class="sr-chart dash-skeleton" id="chart-schematic" data-source="trial_steps"></div>
+    </div>
+    <div class="sr-card" id="card-trials">
+      <div class="sr-card-head">
+        <div>
+          <h3>Every trial in one week</h3>
+          <p class="sr-note">Each line runs from entry to exit, in seconds from the first poke. Open circle: first movement. Filled circle: moved away. Line colour is the group's call from video; grey lines had no clip to review. Hover a trial for its details and the poker's note.</p>
+        </div>
+        <select class="sr-select sr-week-select" aria-label="Week shown"></select>
+      </div>
+      <div class="sr-chart dash-skeleton" id="chart-trials" data-source="trials clips"></div>
+    </div>
+    <div class="sr-card" id="card-groups">
+      <h3>Response by tank, poker and week</h3>
+      <p class="sr-note">All logged trials, including ones without a reviewed clip.</p>
+      <div class="sr-table-box">
+        <table class="sr-table" id="table-groups" data-source="trial_groups" data-row-key="group">
+          <thead><tr>
+            <th data-field="group">Group</th>
+            <th data-field="by">By</th>
+            <th data-field="trials" class="num">Trials</th>
+            <th data-field="moved" class="num">Moved at all</th>
+            <th data-field="moved_away" class="num">Moved away</th>
+            <th data-field="share_moved_away" class="num">Share moved away</th>
+            <th data-field="median_to_move_away_s" class="num">Median s to move away</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+    <section class="sr-section" id="examples">
+    <h2>What the annotators see</h2>
+    <p class="sr-intro">Example clips as the annotators watch them: the five minutes before the poker entered, sped up 20× and cropped to the one tank. Pick a week and an annotator, then either the clips they disagreed with the others on, or the clearest examples of each label. The GIFs are large, so each takes a moment to load.</p>
+    <div class="sr-controls">
+      <span class="sr-note" style="margin: 0">Week</span><div class="sr-toggle" id="examples-week" role="group" aria-label="Week"></div>
+      <span class="sr-note" style="margin: 0">Labels by</span><div class="sr-toggle" id="examples-who" role="group" aria-label="Annotator"></div>
+      <span class="sr-note" style="margin: 0">Show</span><div class="sr-toggle" id="examples-kind" role="group" aria-label="Which clips"></div>
+    </div>
+    <div class="sr-card" id="card-examples">
+      <h3 class="ex-title" data-q="state">—</h3>
+      <p class="sr-note ex-note" data-kind="disagree">Each row shows up to three clips this annotator gave that label while at least one other annotator answered differently: both viewings before one, trials they didn't poke themselves before ones they did, then the least agreement. Under each clip: its number and tank, this annotator's answers, each other annotator's first answer by initial (D Dalton, G Gray, K Kendra, W Willem), and the poker's live call. Q quiescent, A alert, M moving. A blank tile means fewer than three such clips.</p>
+      <p class="sr-note ex-note" data-kind="clear">Each row shows up to three clips this annotator gave that label: both viewings before one, trials they didn't poke themselves before ones they did, then the clips the others agreed on most, spread across tanks (week 1's Dalton examples were picked by hand on the same principles). Under each clip: its number and tank, this annotator's answers, the others' first answers, and the poker's live call (Q quiescent, A alert, M moving). A blank tile means fewer than three clips got that label.</p>
+      <img class="sr-showcase" id="ex-state" loading="lazy" width="1076" height="714" alt="">
+    </div>
+    <div class="sr-card" id="card-examples-eating">
+      <h3 class="ex-title" data-q="eating">—</h3>
+      <p class="sr-note ex-note" data-kind="disagree">Picked the same way: clips this annotator called eating or not eating while another annotator answered differently (an outright opposite answer counts before can't tell). The last item says whether the poker's note mentions eating. E eating, N not eating, U can't tell.</p>
+      <p class="sr-note ex-note" data-kind="clear">Picked the same way, with eating clips the poker's note also says were eating put first. E eating, N not eating, U can't tell. Agreement on eating is low (see the agreement section); these show how differently each annotator uses the label.</p>
+      <img class="sr-showcase" id="ex-eating" loading="lazy" width="1076" height="476" alt="">
+    </div>
+  </section>
+  <script>
+  (() => {
+    const ALL = {"W1": {"Dalton": {"state_disagree": "showcase/dalton_3x3_disagree_w1.gif?v=20261026T154714", "state_clear": "showcase/dalton_3x3_w1.gif?v=20261026T154714", "eating_disagree": "showcase/dalton_eating_2x3_disagree_w1.gif?v=20261026T154714", "eating_clear": "showcase/dalton_eating_2x3_w1.gif?v=20261026T154714"}, "Gray": {"state_disagree": "showcase/gray_3x3_disagree_w1.gif?v=20261026T154714", "state_clear": "showcase/gray_3x3_w1.gif?v=20261026T154714", "eating_disagree": "showcase/gray_eating_2x3_disagree_w1.gif?v=20261026T154714", "eating_clear": "showcase/gray_eating_2x3_w1.gif?v=20261026T154714"}, "Kendra": {"state_disagree": "showcase/kendra_3x3_disagree_w1.gif?v=20261026T154714", "state_clear": "showcase/kendra_3x3_w1.gif?v=20261026T154714", "eating_disagree": "showcase/kendra_eating_2x3_disagree_w1.gif?v=20261026T154714", "eating_clear": "showcase/kendra_eating_2x3_w1.gif?v=20261026T154714"}, "Willem": {"state_disagree": "showcase/willem_3x3_disagree_w1.gif?v=20261026T154714", "state_clear": "showcase/willem_3x3_w1.gif?v=20261026T154714", "eating_disagree": "showcase/willem_eating_2x3_disagree_w1.gif?v=20261026T154714", "eating_clear": "showcase/willem_eating_2x3_w1.gif?v=20261026T154714"}}, "W2": {"Gray": {"state_disagree": "showcase/gray_3x3_disagree_w2.gif?v=20261026T154714", "eating_disagree": "showcase/gray_eating_2x3_disagree_w2.gif?v=20261026T154714"}, "Kendra": {"state_disagree": "showcase/kendra_3x3_disagree_w2.gif?v=20261026T154714", "eating_disagree": "showcase/kendra_eating_2x3_disagree_w2.gif?v=20261026T154714"}, "Willem": {"state_disagree": "showcase/willem_3x3_disagree_w2.gif?v=20261026T154714", "eating_disagree": "showcase/willem_eating_2x3_disagree_w2.gif?v=20261026T154714"}}};
+    const weeks = Object.keys(ALL).sort((a, b) => Number(b.slice(1)) - Number(a.slice(1)));
+    let week = weeks[0], EX, people, kinds, who, kind;
+    const choose = () => {  // what this week has; keep the annotator and kind when it has them
+      EX = ALL[week];
+      people = Object.keys(EX);
+      kinds = [['disagree', 'Disagreements'], ['clear', 'Clearest examples']]
+        .filter(([k]) => people.some((p) => EX[p][`state_${k}`] || EX[p][`eating_${k}`]));
+      if (!people.includes(who)) who = people[0];
+      if (!kinds.some(([k]) => k === kind)) kind = kinds[0] && kinds[0][0];
+    };
+    const titles = {
+      state: {disagree: (p) => `Quiescent, alert and moving: clips ${p} called differently from the others`,
+              clear: (p) => `Quiescent, alert and moving, by ${p}'s labels`},
+      eating: {disagree: (p) => `Eating and not eating: clips ${p} called differently from the others`,
+               clear: (p) => `Eating and not eating, by ${p}'s labels`},
+    };
+    const show = () => {
+      buttons(document.getElementById('examples-who'), people.map((p) => [p, p]), (v) => (who = v), who);
+      buttons(document.getElementById('examples-kind'), kinds, (v) => (kind = v), kind);
+      document.querySelectorAll('#examples-week button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === week)));
+      document.querySelectorAll('#examples-who button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === who)));
+      document.querySelectorAll('#examples-kind button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === kind)));
+      document.querySelectorAll('.ex-note').forEach((n) => (n.hidden = n.dataset.kind !== kind));
+      document.querySelectorAll('.ex-title').forEach((h) => (h.textContent = titles[h.dataset.q][kind](who)));
+      for (const [id, q] of [['ex-state', 'state'], ['ex-eating', 'eating']]) {
+        const img = document.getElementById(id);
+        const src = EX[who] && EX[who][`${q}_${kind}`];
+        img.closest('.sr-card').hidden = !src;
+        if (src) {
+          img.src = src;
+          img.alt = `Looping tank clips: ${titles[q][kind](who)}.`;
+        }
+      }
+    };
+    function buttons(el, items, set) { el.replaceChildren(...items.map(([v, label]) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset.v = v;
+      b.textContent = label;
+      b.addEventListener('click', () => { set(v); show(); });
+      return b;
+    })); }
+    buttons(document.getElementById('examples-week'), weeks.map((w) => [w, `Week ${w.slice(1)}`]), (v) => { week = v; choose(); });
+    choose();
+    show();
+  })();
+  </script>
+
+
+  <section class="sr-section" id="stars">
+    <h2>Each star through the day</h2>
+    <p class="sr-intro">Each week brings a new star in each container, poked several times through its afternoon. This follows each star poke by poke: the state the annotators saw in the five minutes before each poke, how much their answers varied, and how the star responded.</p>
+    <div class="sr-card" id="card-overlay">
+      <div class="sr-card-head">
+        <div>
+          <h3>All of a week's stars on one timeline</h3>
+          <p class="sr-note">Thin lines: each star's mean answer at each poke (quiescent 0, alert 1, moving 2). Black line and grey band: the mean ± 1 standard deviation of every answer across all stars, for each round of pokes. Dashed line: the pokers' mean live call. Hover a star or its legend entry to bring out its own spread bars.</p>
+        </div>
+        <select class="sr-select sr-week-select" aria-label="Week shown"></select>
+      </div>
+      <div class="sr-chart dash-skeleton" id="chart-overlay" data-source="star_days day_cycles"></div>
+    </div>
+    <div class="sr-card" id="card-stars">
+      <div class="sr-card-head">
+        <div>
+          <h3>Consensus state and its spread, per star</h3>
+        </div>
+        <select class="sr-select sr-week-select" aria-label="Week shown"></select>
+      </div>
+      <p class="sr-note">Dot: the mean of all annotators' answers for that poke's clip, both viewings, scoring quiescent 0, alert 1 and moving 2; its colour is what the star did when poked. Bar: ±1 standard deviation of those answers; a longer bar means less agreement. Diamond: the poker's live call. Dashed line: a poke with no clip to review. Hover a poke for its votes.</p>
+      <div class="sr-chart dash-skeleton" id="chart-stars" data-source="star_days"></div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="progress">
+    <h2>Who has annotated what</h2>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-progress">
+        <h3>Progress</h3>
+        <p class="sr-note">Answers given out of the clip showings in each annotator's order.</p>
+        <div class="sr-chart dash-skeleton" id="chart-progress" data-source="progress"></div>
+      </div>
+      <div class="sr-card" id="card-pace">
+        <div class="sr-card-head">
+        <div>
+          <h3>Pace through the session</h3>
+          <p class="sr-note">Running count of one week's answers by clock time. Hover to compare annotators at one moment.</p>
+        </div>
+        <select class="sr-select sr-week-select" aria-label="Week shown"></select>
+      </div>
+        <div class="sr-chart dash-skeleton" id="chart-pace" data-source="pace progress"></div>
+      </div>
+    </div>
+    <div class="sr-card" id="card-timing">
+      <h3>How each annotator worked</h3>
+      <p class="sr-note">Seconds per clip is the median gap between answers, leaving out breaks over 10 minutes. A clip loop lasts 15 seconds, so about one loop per clip means answering right after the required loop.</p>
+      <div class="sr-table-box">
+        <table class="sr-table" id="table-timing" data-source="timing" data-row-key="annotator">
+          <thead><tr>
+            <th data-field="annotator"><button type="button">Annotator</button></th>
+            <th data-field="answered" class="num"><button type="button">Answers</button></th>
+            <th data-field="median_seconds" class="num"><button type="button">Seconds per clip</button></th>
+            <th data-field="loops_per_clip" class="num"><button type="button">Loops per clip</button></th>
+            <th data-field="revised" class="num"><button type="button">Revised</button></th>
+            <th data-field="went_back" class="num"><button type="button">Went back</button></th>
+            <th data-field="left_tab" class="num"><button type="button">Left the tab</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="agreement">
+    <h2>Do annotators agree with each other?</h2>
+    <p class="sr-intro">Each square compares two annotators' first-viewing answers on the clips both have seen, as Cohen's κ: 0 is what chance alone would give, 1 is full agreement. The dashed diagonal compares each annotator's first and second viewing of the same clip. Hover a square for the raw share of matching answers.</p>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-pairs-state">
+        <h3>State before poking</h3>
+        <p class="sr-note">Quiescent, alert or moving. Darker means closer agreement.</p>
+        <div class="sr-chart dash-skeleton" id="chart-pairs-state" data-source="agreement"></div>
+      </div>
+      <div class="sr-card" id="card-pairs-eating">
+        <h3>Eating</h3>
+        <p class="sr-note">Eating or not eating; can't tell is left out. When nearly every answer is "not eating", κ can sit near 0 even though the raw match is high.</p>
+        <div class="sr-chart dash-skeleton" id="chart-pairs-eating" data-source="agreement"></div>
+      </div>
+      <div class="sr-card" id="card-levels">
+        <h3>How many clips everyone agrees on</h3>
+        <p class="sr-note">Clips by how the first-viewing answers line up. Split means the top answers are tied.</p>
+        <table class="sr-table" id="table-levels" data-source="levels" data-row-key="level">
+          <thead><tr><th data-field="level">Agreement</th><th data-field="state" class="num">State</th><th data-field="eating" class="num">Eating</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sr-card" id="card-clips">
+      <div class="sr-card-head">
+        <div>
+          <h3>Clip by clip, one week</h3>
+          <p class="sr-note">One column per clip: the annotators' first-viewing answers stacked, then the live call (or, for eating, whether the poker's note mentions eating), then what the star did when poked. Grouped by how well the answers agree.</p>
+        </div>
+        <div class="sr-controls">
+          <select class="sr-select sr-week-select" aria-label="Week shown"></select>
+          <div class="sr-toggle" id="clip-question" role="group" aria-label="Question shown">
+            <button type="button" data-q="state" aria-pressed="true">State</button>
+            <button type="button" data-q="eating" aria-pressed="false">Eating</button>
+          </div>
+        </div>
+      </div>
+      <div class="sr-chart dash-skeleton" id="chart-clips" data-source="clips progress clip_notes"></div>
+      <details class="sr-details">
+        <summary>Clip table, every week</summary>
+        <div class="sr-table-box">
+          <table class="sr-table" id="table-clips" data-source="clip_table" data-row-key="clip">
+            <thead><tr>
+              <th data-field="clip"><button type="button">Clip</button></th>
+              <th data-field="week" class="num"><button type="button">Week</button></th>
+              <th data-field="tank" class="sr-wide"><button type="button">Tank</button></th>
+              <th data-field="camera" class="sr-wide"><button type="button">Camera</button></th>
+              <th data-field="quiescent" class="num"><button type="button">Quiescent</button></th>
+              <th data-field="alert" class="num"><button type="button">Alert</button></th>
+              <th data-field="moving" class="num"><button type="button">Moving</button></th>
+              <th data-field="group_call"><button type="button">Group call</button></th>
+              <th data-field="agreement"><button type="button">Agreement</button></th>
+              <th data-field="live_call"><button type="button">Live call</button></th>
+              <th data-field="eating_call"><button type="button">Eating call</button></th>
+              <th data-field="outcome"><button type="button">Outcome</button></th>
+              <th data-field="seconds_to_move_away" class="num"><button type="button">Seconds to move away</button></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="sr-section" id="usage">
+    <h2>How each annotator uses the answers</h2>
+    <p class="sr-intro">Share of each annotator's answers over both viewings. Different habits, such as leaning on can't tell or on one state, pull agreement down even when annotators see the same thing.</p>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-mix-state">
+        <h3>State</h3>
+        <p class="sr-note">Quiescent, alert or moving.</p>
+        <div class="sr-chart dash-skeleton" id="chart-mix-state" data-source="mix"></div>
+      </div>
+      <div class="sr-card" id="card-mix-eating">
+        <h3>Eating</h3>
+        <p class="sr-note">Not asked yet marks answers given before the eating question was added.</p>
+        <div class="sr-chart dash-skeleton" id="chart-mix-eating" data-source="mix"></div>
+      </div>
+    </div>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-drift-state">
+        <h3>State through the session</h3>
+        <p class="sr-note">Each annotator's order split into thirds, to show answers drifting as they go.</p>
+        <div class="sr-chart dash-skeleton" id="chart-drift-state" data-source="drift"></div>
+      </div>
+      <div class="sr-card" id="card-drift-eating">
+        <h3>Eating through the session</h3>
+        <p class="sr-note">The same thirds for the eating question.</p>
+        <div class="sr-chart dash-skeleton" id="chart-drift-eating" data-source="drift"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="consistency">
+    <h2>Are annotators consistent?</h2>
+    <p class="sr-intro">Every clip is shown twice, so each annotator can be compared with themself. The live call is the poker's call at entry, made in person rather than from video.</p>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-consistency">
+        <h3>Repeat viewings and the live call</h3>
+        <p class="sr-note">Cohen's κ for each annotator. Hover a bar for the raw share of matching answers.</p>
+        <div class="sr-chart dash-skeleton" id="chart-consistency" data-source="agreement"></div>
+      </div>
+      <div class="sr-card" id="card-own">
+        <h3>Own trials vs others' trials</h3>
+        <p class="sr-note">Gray and Kendra also poked. On trials they poked themselves, a closer match with the live call could mean they remember the trial rather than read the video.</p>
+        <div class="sr-chart dash-skeleton" id="chart-own" data-source="own"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="outcome">
+    <h2>Does the state predict the response?</h2>
+    <p class="sr-intro">The group call is the answer most annotators gave on first viewing; Split means a tie. Outcomes come from the poke log: moved away, moved but didn't leave, or no movement within the poking time.</p>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-outcome">
+        <h3>What happened after each call</h3>
+        <p class="sr-note">Clips grouped by the video call and, separately, by the live call.</p>
+        <div class="sr-chart dash-skeleton" id="chart-outcome" data-source="outcome"></div>
+      </div>
+      <div class="sr-card" id="card-movetimes">
+        <h3>Time from first poke to moving away</h3>
+        <p class="sr-note">Each dot is a clip whose star moved away, by group call; the dashed tick marks the median.</p>
+        <div class="sr-chart dash-skeleton" id="chart-movetimes" data-source="clips"></div>
+      </div>
+      <div class="sr-card" id="card-confusion">
+        <h3>Group call vs live call</h3>
+        <p class="sr-note">Clips by the group's call from video (rows) and the poker's live call (columns). Dashed squares are where they match.</p>
+        <div class="sr-chart dash-skeleton" id="chart-confusion" data-source="confusion"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="response-time">
+    <h2>Does the state change how fast stars respond?</h2>
+    <p class="sr-intro">Time from the first poke to the first movement, and to moving away. Stars that hadn't responded when the poker stopped would have responded later, if at all, so comparing only the stars that did respond would mislead. These curves and tests (survival analysis) count each star as still waiting until the poker left.</p>
+    <div class="sr-card" id="card-km">
+      <div class="sr-card-head">
+        <div>
+          <h3>Time to respond, by state</h3>
+          <p class="sr-note">Share of stars that had responded by each second after the first poke (Kaplan–Meier). Ticks mark stars still waiting when the poker left. A curve that rises sooner means faster responses; the dashed line marks half the stars.</p>
+        </div>
+        <div class="sr-controls">
+          <select class="sr-select" id="km-basis" aria-label="Whose call"></select>
+          <select class="sr-select" id="km-scope" aria-label="Tank"></select>
+          <div class="sr-toggle" id="km-endpoint" role="group" aria-label="Response">
+            <button type="button" data-v="First movement" aria-pressed="true">First movement</button>
+            <button type="button" data-v="Moved away" aria-pressed="false">Moved away</button>
+          </div>
+        </div>
+      </div>
+      <div class="sr-chart dash-skeleton" id="chart-km" data-source="km"></div>
+    </div>
+    <div class="sr-card" id="card-km-tests">
+      <h3>Tests of response time</h3>
+      <p class="sr-note">Median seconds to respond for quiescent, alert and moving calls (">" when fewer than half responded before the poker left), then log-rank p-values: across the states, within tanks (stratified, so a tank difference can't explain it), and alert vs quiescent alone. The last row of each response compares the annotators' mean score with the time to respond (Harrell's C: above 0.5 means more active clips responded sooner). States called fewer than 3 times are left out of the tests.</p>
+      <div class="sr-table-box">
+        <table class="sr-table" id="table-km" data-source="km_tests" data-row-key="id">
+          <thead><tr>
+            <th data-field="endpoint">Response</th>
+            <th data-field="basis">Whose call</th>
+            <th data-field="medians" class="num">Median time (Q · A · M)</th>
+            <th data-field="stars" class="num sr-wide">Stars (Q · A · M)</th>
+            <th data-field="p_text" class="num">p, states</th>
+            <th data-field="p_within_tank_text" class="num">p, within tanks</th>
+            <th data-field="p_alert_vs_quiescent_text" class="num sr-wide">p, alert vs quiescent</th>
+            <th data-field="reading">What it suggests</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="by-annotator">
+    <h2>Does it depend on who was annotating?</h2>
+    <p class="sr-intro">The same comparison for each annotator on their own, using their first-viewing answer for each clip. If the state really predicts the response, every annotator's alert clips should move away more often than their quiescent ones; an annotator whose calls separate the outcomes less is reading the clips differently.</p>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-split">
+        <h3>Moved away, by each annotator's call</h3>
+        <p class="sr-note">Share of clips whose star moved away after each call. Bigger dots rest on more clips. On the right, the gap between the alert and quiescent rates, shown when both rest on at least 3 clips. The group and live calls are below the line for comparison.</p>
+        <div class="sr-chart dash-skeleton" id="chart-split" data-source="annotator_split"></div>
+      </div>
+      <div class="sr-card" id="card-by-annotator">
+        <h3>Outcome after each call, per annotator</h3>
+        <p class="sr-note">The full outcome mix behind each dot, with how many clips got that call.</p>
+        <div class="sr-chart dash-skeleton" id="chart-by-annotator" data-source="annotator_outcome"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="tanks">
+    <h2>Starbase vs starbot</h2>
+    <p class="sr-intro">The two tank systems hold different stars in different set-ups, so they may respond differently to poking and may look different on camera. This compares them on every measure on the page, to see whether the tanks differ and whether a difference between them could explain the link between state and response.</p>
+    <div class="sr-card" id="card-tanks">
+      <h3>The tanks side by side</h3>
+      <p class="sr-note">Shares and medians for each tank, the difference (first tank minus second), a 95% bootstrap interval for it, and a two-sided p-value (Fisher's exact test for shares, a permutation of tank labels otherwise). Not adjusted for running many tests.</p>
+      <div class="sr-table-box">
+        <table class="sr-table" id="table-tanks" data-source="tank_tests" data-row-key="id">
+          <thead><tr>
+            <th data-field="topic" class="sr-wide">Topic</th>
+            <th data-field="measure">Measure</th>
+            <th data-field="a_text" class="num">Tank 1</th>
+            <th data-field="b_text" class="num">Tank 2</th>
+            <th data-field="difference_text" class="num">Difference</th>
+            <th data-field="interval" class="num">95% interval</th>
+            <th data-field="p_text" class="num">p</th>
+            <th data-field="reading">What it suggests</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-tank-mix">
+        <h3>State calls in each tank</h3>
+        <p class="sr-note">The live call, the group call from video, and every annotator answer, for each tank.</p>
+        <div class="sr-chart dash-skeleton" id="chart-tank-mix" data-source="tank_mix"></div>
+      </div>
+      <div class="sr-card" id="card-tank-outcome">
+        <h3>What happened after each call, within each tank</h3>
+        <p class="sr-note">If the state predicts the response, alert and moving rows should show more moving away than quiescent rows inside each tank, not just overall.</p>
+        <div class="sr-chart dash-skeleton" id="chart-tank-outcome" data-source="tank_outcome"></div>
+      </div>
+    </div>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-tank-times">
+        <h3>How fast stars responded</h3>
+        <p class="sr-note">Seconds from the first poke, one dot per trial, coloured by outcome; the dashed tick marks the median.</p>
+        <div class="sr-chart dash-skeleton" id="chart-tank-times" data-source="trials"></div>
+      </div>
+      <div class="sr-card" id="card-tank-scores">
+        <h3>Annotated state by outcome, within each tank</h3>
+        <p class="sr-note">Each dot is a clip's mean annotator score. Within a tank, clips that moved away sitting further right than the others means the state carries information beyond the tank.</p>
+        <div class="sr-chart dash-skeleton" id="chart-tank-scores" data-source="star_days"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="weeks">
+    <h2>Week by week</h2>
+    <p class="sr-intro">The same key figures for each week, to see whether the stars, the annotators or the link between state and response shift as the study goes on. Each week is a new set of stars.</p>
+    <div class="sr-card" id="card-week-lines">
+      <h3>Key figures per week</h3>
+      <p class="sr-note">One point per week. Hover a point for its value.</p>
+      <div class="sr-chart dash-skeleton" id="chart-week-lines" data-source="week_summary"></div>
+    </div>
+    <div class="sr-card" id="card-week-table">
+      <h3>Each week's numbers</h3>
+      <div class="sr-table-box">
+        <table class="sr-table" id="table-weeks" data-source="week_summary" data-row-key="week">
+          <thead><tr>
+            <th data-field="week" class="num">Week</th>
+            <th data-field="round">Poking day</th>
+            <th data-field="stars" class="num">Stars</th>
+            <th data-field="trials" class="num">Trials</th>
+            <th data-field="clips" class="num">Clips</th>
+            <th data-field="moved_away" class="num">Moved away</th>
+            <th data-field="quiescent_video" class="num">Quiescent, video</th>
+            <th data-field="quiescent_live" class="num">Quiescent, live</th>
+            <th data-field="mean_score" class="num">Mean score</th>
+            <th data-field="alpha_state" class="num">α state</th>
+            <th data-field="alpha_eating" class="num">α eating</th>
+            <th data-field="kappa_group_live" class="num">κ group vs live</th>
+            <th data-field="auc_score" class="num">AUC, score</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="stats">
+    <h2>Statistical summary</h2>
+    <p class="sr-intro">The page's main questions as tests, pooling every week, to help tell patterns that are likely real from ones a dataset this size could show by chance. Each row gives an estimate, a 95% interval and, where it applies, a p-value, with a plain reading.</p>
+    <div class="sr-card" id="card-stats">
+      <h3>Tests</h3>
+      <p class="sr-note">Intervals are bootstrap percentiles over clips; p-values are two-sided (Fisher's exact test for differences in rates, permutation tests otherwise) and not adjusted for running many tests. AUC is the chance that a clip whose star moved away got a more active call than one whose star didn't: 0.5 means no link, 1 a perfect one.</p>
+      <div class="sr-table-box">
+        <table class="sr-table" id="table-stats" data-source="stat_summary" data-row-key="id">
+          <thead><tr>
+            <th data-field="topic" class="sr-wide">Topic</th>
+            <th data-field="question">Question</th>
+            <th data-field="measure" class="sr-wide">Measure</th>
+            <th data-field="estimate_text" class="num">Estimate</th>
+            <th data-field="interval" class="num">95% interval</th>
+            <th data-field="p_text" class="num">p</th>
+            <th data-field="n" class="num">Clips</th>
+            <th data-field="reading">What it suggests</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sr-grid">
+      <div class="sr-card" id="card-forest">
+        <h3>How well each call predicts moving away</h3>
+        <p class="sr-note">AUC with its 95% interval. Filled dots have p below 0.05; an interval that crosses the dashed line is consistent with no link.</p>
+        <div class="sr-chart dash-skeleton" id="chart-forest" data-source="stat_summary"></div>
+      </div>
+      <div class="sr-card sr-guide" id="card-reading">
+        <h3>Reading these results</h3>
+        <ul>
+          <li><b>Small samples.</b> Each week adds one new star per container. Until several weeks are in, some calls (such as quiescent from the group) rest on only a few clips, so intervals are wide.</li>
+          <li><b>Repeated pokes.</b> Each star is poked several times on its day, so its clips aren't independent; the true uncertainty is, if anything, larger than shown. Stars from different weeks are different animals.</li>
+          <li><b>Many tests.</b> With this many rows, about one in twenty can pass p &lt; 0.05 by chance. Trust patterns that repeat across annotators and across weeks.</li>
+          <li><b>The tank.</b> If one tank's stars move away more and also get more active calls, the tank alone could make the state look predictive. The within-tank rows check for that.</li>
+          <li><b>Still collecting.</b> Annotators who haven't finished make their own rows, and the group's, less certain. Each week adds clips and narrows the intervals.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-section" id="methods">
+    <h2>How these numbers are worked out</h2>
+    <div class="sr-card sr-methods">
+      <dl>
+        <dt>Cohen's κ</dt><dd>Agreement between two sets of answers after taking away what chance alone would give: 0 is chance, 1 is perfect. A rough reading: up to 0.2 slight, 0.4 fair, 0.6 moderate, 0.8 substantial, above that almost perfect.</dd>
+        <dt>Krippendorff's α</dt><dd>The same idea across all annotators at once. It allows for clips that some annotators haven't reached yet.</dd>
+        <dt>Which answers count</dt><dd>Agreement uses each annotator's answer from their first viewing of a clip; the second viewing measures repeat consistency. Can't tell is left out of agreement but shown in the answer mix. Answers given before the eating question was added have no eating answer.</dd>
+        <dt>Group call</dt><dd>The state most annotators chose on first viewing. A tie for the top answer is Split.</dd>
+        <dt>Outcome</dt><dd>From the poke log: moved away when a movement-away time was logged; moved, didn't leave when only a first movement was logged; otherwise no movement.</dd>
+        <dt>Clip numbers</dt><dd>Clip numbers (W1-C01 is week 1's first clip) were made for this page and are not the clip names on the review site. Stars are named by week and container (W1 starbot A). This page shows live calls and outcomes, so keep it from anyone still annotating the round.</dd>
+      </dl>
+    </div>
+  </section>
+</div>
+
+<script src="lib.js?v=20261026T154714"></script>
+<script src="calcs.js?v=20261026T154714"></script>
+<script src="page.js?v=20261026T154714"></script>
+
+</main>
+<footer class="site-foot">
+  Data files: <a href="data/answers.csv">answers.csv</a> · <a href="data/activity.csv">activity.csv</a> · <a href="data/trials.csv">trials.csv</a> · Built 26 Oct 2026, 3:47 PM
+</footer>
+</body>
+</html>
